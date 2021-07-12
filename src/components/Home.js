@@ -1,13 +1,13 @@
 import React from 'react'
-import BeerMap from './BeerMap'
 import BreweryCollection from './BreweryCollection'
 import Search from './Search'
 
-const Home = ({ breweries }) => {
+const Home = ({ breweries, handleChange }) => {
     return (
         <div>
-            <Search />
-            <BeerMap />
+            <Search 
+                handleChange={handleChange}
+            />
             <BreweryCollection 
                 breweries={breweries}
             />

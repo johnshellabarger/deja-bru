@@ -1,10 +1,17 @@
 import React from 'react'
 
-const Search = () => {
+const Search = ({ handleChange }) => {
     return (
         <div>
-            
-        </div>
+        <form>
+          <input
+            name="areaCode"
+            onChange={handleChange}
+            type='number'
+          />
+          <button type="submit">Submit Area Code</button>
+        </form>
+      </div>
     )
 }
 

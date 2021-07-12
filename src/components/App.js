@@ -1,10 +1,17 @@
 import '../App.css';
-import Header from './Header';
+import Navbar from './Navbar';
 import Home from './Home'
+import Favorites from './Favorites';
 import { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom'
 
 function App() {
   const [breweries, setBreweries] = useState([])
+  const [FormData, setFormData] = useState('')
+
+  function handleChange(e){
+    setFormData(e.target.value)
+}
 
   console.log(breweries)
   
@@ -16,10 +23,15 @@ function App() {
   
   return (
     <div className="App">
-      <Header />
-      <Home 
-        breweries={breweries}
-      />
+      <Navbar />
+      <Switch>
+        <Route exact path="/home">
+          <Home breweries={breweries} handleChange={handleChange}/>
+        </Route>
+        <Route exact path='/favorites'>
+          <Favorites />
+        </Route>
+      </Switch>
     </div>
   );
 }
