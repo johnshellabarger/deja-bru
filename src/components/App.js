@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import Poop from './Poop';
 import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <Poop /> 
+      <Poop />
     </div>
   );
 }
