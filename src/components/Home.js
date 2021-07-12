@@ -3,12 +3,14 @@ import BeerMap from './BeerMap'
 import BreweryCollection from './BreweryCollection'
 import Search from './Search'
 
-const Home = () => {
+const Home = ({ breweries }) => {
     return (
         <div>
             <Search />
             <BeerMap />
-            <BreweryCollection />
+            <BreweryCollection 
+                breweries={breweries}
+            />
         </div>
     )
 }

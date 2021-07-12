@@ -17,7 +17,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Home 
+        breweries={breweries}
+      />
     </div>
   );
 }
