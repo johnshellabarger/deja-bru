@@ -1,3 +1,5 @@
+
+import Poop from './Poop';
 import './App.css';
 
 
@@ -5,9 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <p>Teset</p>
-       
+      <Poop />
     </div>
   );
 }
