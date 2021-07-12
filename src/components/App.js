@@ -1,4 +1,3 @@
-
 import Poop from './Poop';
 import './App.css';
 
