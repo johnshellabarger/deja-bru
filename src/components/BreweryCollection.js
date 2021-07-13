@@ -19,6 +19,8 @@ const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorite
                     street={brewery.street}
                     favorites={favorites}
                     visitedBreweries={visitedBreweries}
+                    phoneNumber={brewery.phone}
+
                 />
             )})}
         </div>

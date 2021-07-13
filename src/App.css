@@ -379,3 +379,7 @@ body {
 a:hover {
 	
 }
+
+#visited{
+	color:red;
+}
