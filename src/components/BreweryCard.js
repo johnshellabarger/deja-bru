@@ -4,7 +4,7 @@ import { FaMap } from "react-icons/fa"
 import { useState } from 'react'
 
 
-const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, street, favorites }) => {
+const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, handleVisited, street, favorites, visitedBreweries }) => {
     const [isFavorited, setIsFavorited] = useState(false)
     const [isVisited, setIsVisited] = useState(false)
 
@@ -22,7 +22,9 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
         }
     }
 
-    function handleVisit(){
+    function handleVisit(e){
+        handleVisited(id)
+        if(isVisited === false)
         setIsVisited(!isVisited)
     }
 
@@ -54,7 +56,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <div className='header'>{name}</div>
                 <span>{street}</span>
                 <div className='meta'> {city}, {state}</div>
-                <span onClick={handleVisit}><FaMap/>&nbsp;&nbsp;{!isVisited ? 'Visit Brewery' : 'Visited' }</span>
+                <span onClick={handleVisit}><FaMap/>&nbsp;&nbsp;{!compareArrayWithBrewery(visitedBreweries) ? 'Visit Brewery' : 'Visited' }</span>
             </div>
             <div className='description'>
                 {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
