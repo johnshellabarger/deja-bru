@@ -3,7 +3,7 @@ import React from 'react'
 const LandingPage = () => {
     return (
         <div>
-            <h1>Landing Page</h1>
+            <h1 id='intro-text' className='animate__animated animate__backInDown'>Welcome to Deja-Bru!</h1>
             <div id="background-wrap">
                 <div class="bubble x1"></div>
                 <div class="bubble x2"></div>
