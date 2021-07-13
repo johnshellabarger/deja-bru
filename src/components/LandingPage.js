@@ -4,7 +4,7 @@ const LandingPage = () => {
     return (
         <div>
             <h1 id='intro-text' className='animate__animated animate__backInDown'>Welcome to Deja-Bru!</h1>
-            <div id="background-wrap">
+            <div id="background-wrap" className='animate__animated animate__slideInUp'>
                 <div class="bubble x1"></div>
                 <div class="bubble x2"></div>
                 <div class="bubble x3"></div>
