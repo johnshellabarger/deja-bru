@@ -10,11 +10,11 @@ function App() {
   const [formData, setFormData] = useState(null)
 
   function handleChange(e){
-    setFormData(e.target.value)
+    setFormData(encodeURIComponent(e.target.value))
   }
 
   function handleSubmit(e){
-    fetch(`https://api.openbrewerydb.org/breweries?by_postal=${formData}`)
+    fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData}&by_state=colorado`)
     .then(resp => resp.json())
     .then(data => setBreweries(data))
   }
