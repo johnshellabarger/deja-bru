@@ -16,6 +16,7 @@ const LandingPage = () => {
                 <div class="bubble x9"></div>
                 <div class="bubble x10"></div>
             </div>
+            <img src=''></img>
         </div>
     )
 }
