@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import LandingPage from './LandingPage';
 import Home from './Home'
 import Favorites from './Favorites';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom'
 
 function App() {
@@ -14,11 +14,24 @@ function App() {
   })
   const [favorites, setFavorites] = useState([])
 
+  useEffect(() => {
+    fetch('http://localhost:3000/favorites')
+    .then(resp => resp.json())
+    .then(data => setFavorites(data))
+  }, [])
+
   function handleFavorites(id){
     const favoritedBrewery = breweries.find(brewery => brewery.id === id)
     if(!favorites.find(fav => fav.id === id)){
       setFavorites([...favorites, favoritedBrewery])
     }
+    fetch('http://localhost:3000/favorites', {
+      method: 'POST',
+      headers: {
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify(favoritedBrewery),
+    }, [])
   }
 
   function handleChange(e){
