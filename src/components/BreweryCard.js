@@ -1,6 +1,12 @@
 import React from 'react'
 
-const BreweryCard = ({ id, name, city, state, website_url, brewery_type }) => {
+const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites }) => {
+
+    function handleClick(e){
+        console.log('working')
+        handleFavorites(id)
+    }
+
     return (
         <div className='ui card'>
             <div classname='ui image'>
@@ -16,7 +22,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type }) => {
             <div className='extra content'>
                 <span className='right floated'>{brewery_type}</span>
             </div>
-            <div className='ui button attached button'>
+            <div onClick={handleClick} className='ui button attached button'>
                 <i className='add icon'></i>
                 Add Favorite
             </div>

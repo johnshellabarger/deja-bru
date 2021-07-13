@@ -3,7 +3,7 @@ import BreweryCollection from './BreweryCollection'
 import Search from './Search'
 import GoogleMap from './GoogleMap'
 
-const Home = ({ breweries, handleChange, handleSubmit }) => {
+const Home = ({ breweries, handleChange, handleSubmit, handleFavorites }) => {
     return (
         <div>
             <Search 
@@ -11,7 +11,8 @@ const Home = ({ breweries, handleChange, handleSubmit }) => {
                 handleSubmit = {handleSubmit}
             />
             <GoogleMap />
-            <BreweryCollection 
+            <BreweryCollection
+                handleFavorites={handleFavorites} 
                 breweries={breweries}
             />
         </div>

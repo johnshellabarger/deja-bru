@@ -11,6 +11,11 @@ function App() {
     city: '',
     state: ''
   })
+  const [favorites, setFavorites] = useState([])
+
+  function handleFavorites(id){
+    console.log(id)
+  }
 
   function handleChange(e){
     let name = e.target.name
@@ -32,7 +37,12 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/home">
-          <Home breweries={breweries} handleChange={handleChange} handleSubmit={handleSubmit}/>
+          <Home
+            breweries={breweries}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            handleFavorites={handleFavorites}
+          />
         </Route>
         <Route exact path='/favorites'>
           <Favorites />
