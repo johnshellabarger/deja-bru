@@ -16,6 +16,10 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type }) => {
             <div className='extra content'>
                 <span className='right floated'>{brewery_type}</span>
             </div>
+            <div className='ui button attached button'>
+                <i className='add icon'></i>
+                Add Favorite
+            </div>
         </div>
     )
 }
