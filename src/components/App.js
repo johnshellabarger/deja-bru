@@ -16,7 +16,9 @@ function App() {
 
   function handleFavorites(id){
     const favoritedBrewery = breweries.find(brewery => brewery.id === id)
-    setFavorites([...favorites, favoritedBrewery])
+    if(!favorites.find(fav => fav.id === id)){
+      setFavorites([...favorites, favoritedBrewery])
+    }
   }
 
   function handleChange(e){
