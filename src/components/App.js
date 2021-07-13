@@ -59,6 +59,7 @@ function App() {
         <Route exact path="/home">
           <Home
             breweries={breweries}
+            favorites={favorites}
             handleChange={handleChange}
             handleSubmit={handleSubmit}
             handleFavorites={handleFavorites}
