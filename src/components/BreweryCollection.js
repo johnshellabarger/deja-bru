@@ -3,7 +3,7 @@ import BreweryCard from './BreweryCard'
 
 const BreweryCollection = ({ breweries }) => {
     return (
-        <div>
+        <div className='ui link cards centered'>
             {breweries.map(brewery => { return (
                 <BreweryCard 
                     key = {brewery.id}
