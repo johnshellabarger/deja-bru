@@ -56,7 +56,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <div className='header'>{name}</div>
                 {street ? <span>{street}</span> : <span>---</span>}
                 <div className='meta'> {city}, {state}</div>
-                <span onClick={handleVisit}><FaMap/>&nbsp;&nbsp;{!compareArrayWithBrewery(visitedBreweries) ? 'Visit Brewery' : 'Visited' }</span>
+                <span onClick={handleVisit}>{!compareArrayWithBrewery(visitedBreweries) ? <span><FaMap/>&nbsp;Visit Brewery</span> : <span id='visited'><FaMap/>&nbsp;Visited</span> }</span>
             </div>
             <div className='description'>
                 {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
