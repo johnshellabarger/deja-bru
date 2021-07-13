@@ -11,6 +11,7 @@ const BreweryCollection = ({ breweries }) => {
                     city = {brewery.city}
                     state = {brewery.state}
                     website_url = {brewery.website_url}
+                    brewery_type={brewery.brewery_type}
                 />
             )})}
         </div>
