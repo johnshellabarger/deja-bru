@@ -14,7 +14,8 @@ function App() {
   const [favorites, setFavorites] = useState([])
 
   function handleFavorites(id){
-    console.log(id)
+    const favoritedBrewery = breweries.find(brewery => brewery.id === id)
+    setFavorites([...favorites, favoritedBrewery])
   }
 
   function handleChange(e){
@@ -45,7 +46,10 @@ function App() {
           />
         </Route>
         <Route exact path='/favorites'>
-          <Favorites />
+          <Favorites 
+            favorites={favorites}
+            handleFavorites={handleFavorites}
+          />
         </Route>
       </Switch>
     </div>
