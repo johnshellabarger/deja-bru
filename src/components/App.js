@@ -19,10 +19,7 @@ function App() {
       ...formData,
       [name]:value
     })
-
-    
   }
-
 
   function handleSubmit(e){
     fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData.city}&by_state=${formData.state}`)
