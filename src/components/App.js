@@ -13,11 +13,18 @@ function App() {
     state: ''
   })
   const [favorites, setFavorites] = useState([])
+  const [visitedBreweries, setVisitedBreweries] = useState([])
 
   useEffect(() => {
     fetch('http://localhost:3000/favorites')
     .then(resp => resp.json())
     .then(data => setFavorites(data))
+  }, [])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/visited')
+    .then(resp => resp.json())
+    .then(data => setVisitedBreweries(data))
   }, [])
 
   function handleFavorites(id){
@@ -32,6 +39,29 @@ function App() {
       },
       body: JSON.stringify(favoritedBrewery),
     }, [])
+  }
+
+  function handleVisited(id){
+    console.log(id)
+    const clickedBrewery = breweries.find(brewery => brewery.id === id)
+    console.log(clickedBrewery)
+    if(!visitedBreweries.find(visited => visited.id === id)){
+      setVisitedBreweries([...visitedBreweries, clickedBrewery])
+      fetch(`http://localhost:3000/visited`, {
+      method: 'POST', 
+      headers: {
+        'Content-Type' : 'application/json'
+      }, 
+      body: JSON.stringify(clickedBrewery)
+    })
+    } else {
+      const arrayWithRemovedBrewery = visitedBreweries.filter(visited => visited.id !== id)
+      console.log(arrayWithRemovedBrewery)
+      setVisitedBreweries(arrayWithRemovedBrewery)
+      fetch(`http://localhost:3000/visited/${id}`, {
+      method: 'DELETE'
+      })
+    }
   }
 
   function handleChange(e){
@@ -60,9 +90,11 @@ function App() {
           <Home
             breweries={breweries}
             favorites={favorites}
+            visitedBreweries={visitedBreweries}
             handleChange={handleChange}
             handleSubmit={handleSubmit}
             handleFavorites={handleFavorites}
+            handleVisited={handleVisited}
           />
         </Route>
         <Route exact path='/favorites'>

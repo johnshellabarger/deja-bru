@@ -1,7 +1,7 @@
 import React from 'react'
 import BreweryCard from './BreweryCard'
 
-const BreweryCollection = ({ breweries, handleFavorites, favorites }) => {        
+const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorites, visitedBreweries }) => {        
     return (
         <div className='ui link cards centered'>
             {breweries.map(brewery => { return (
@@ -15,9 +15,12 @@ const BreweryCollection = ({ breweries, handleFavorites, favorites }) => {
                     website_url = {brewery.website_url}
                     brewery_type={brewery.brewery_type}
                     handleFavorites={handleFavorites}
+                    handleVisited={handleVisited}
                     street={brewery.street}
                     favorites={favorites}
+                    visitedBreweries={visitedBreweries}
                     phoneNumber={brewery.phone}
+
                 />
             )})}
         </div>
