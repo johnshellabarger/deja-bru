@@ -1,6 +1,7 @@
 import React from 'react'
 import FavoriteCard from './FavoriteCard'
 
+
 const Favorites = ({ favorites, setFavorites }) => {
     return (
         <div>

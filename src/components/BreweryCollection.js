@@ -1,7 +1,11 @@
 import React from 'react'
 import BreweryCard from './BreweryCard'
 
+
+
 const BreweryCollection = ({ breweries, handleFavorites }) => {
+
+    
     return (
         <div className='ui link cards centered'>
             {breweries.map(brewery => { return (
