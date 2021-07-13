@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaBeer} from "react-icons/fa"
 
 const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites }) => {
 
@@ -23,7 +24,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <span className='right floated'>{brewery_type}</span>
             </div>
             <div onClick={handleClick} className='ui button attached button'>
-                <i className='add icon'></i>
+                <FaBeer />&nbsp;
                 Add Favorite
             </div>
         </div>
