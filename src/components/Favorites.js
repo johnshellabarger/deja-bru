@@ -1,13 +1,13 @@
 import React from 'react'
-import BreweryCard from './BreweryCard'
+import FavoriteCard from './FavoriteCard'
 
-const Favorites = ({ favorites, handleFavorites }) => {
+const Favorites = ({ favorites, setFavorites }) => {
     return (
         <div>
             <h1>Favorites</h1>
             <div className='ui link cards centered favorites'>
                 {favorites.map(favorite => {return (
-                    <BreweryCard 
+                    <FavoriteCard 
                     key = {favorite.id}
                     id = {favorite.id}
                     name = {favorite.name}
@@ -15,7 +15,8 @@ const Favorites = ({ favorites, handleFavorites }) => {
                     state = {favorite.state}
                     website_url = {favorite.website_url}
                     brewery_type={favorite.brewery_type}
-                    handleFavorites={handleFavorites}
+                    setFavorites={setFavorites}
+                    favorites={favorites}
                 />
                 )})}
             </div>
