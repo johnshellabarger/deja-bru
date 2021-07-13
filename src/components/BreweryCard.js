@@ -14,8 +14,8 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
         setIsFavorited(!isFavorited)
     }
 
-    function findFavoritesInBreweries(){
-        for (const item of favorites) {
+    function compareArrayWithBrewery(array){
+        for (const item of array) {
             if (item.name === name) {
                 return true
             } 
@@ -62,7 +62,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
             <div className='extra content'>
                 <span className='right floated'>{brewery_type}</span>
             </div>
-            { !findFavoritesInBreweries() ? 
+            { !compareArrayWithBrewery(favorites) ? 
             <div onClick={handleClick} className='ui button attached button'><FaBeer/>&nbsp;Add Favorite</div> : 
             <div onClick={handleClick} className='ui button attached button' id='added-btn'>Added to Your Favorites</div>
             }   
