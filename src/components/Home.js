@@ -5,7 +5,7 @@ import GoogleMap from './GoogleMap'
 
 const Home = ({ breweries, handleChange, handleSubmit, handleFavorites }) => {
     return (
-        <div>
+        <div className='home'>
             <Search 
                 handleChange={handleChange}
                 handleSubmit = {handleSubmit}

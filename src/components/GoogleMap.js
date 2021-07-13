@@ -1,12 +1,11 @@
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React, { Component } from 'react' 
-
-
+import { FaCentercode } from 'react-icons/fa';
 
   const containerStyle = {
     position: 'relative',  
-    width: '20%',
-    height: '20%'
+    width: '50%',
+    height: '50%'
   }
 
 export class MapContainer extends Component {
@@ -14,15 +13,15 @@ export class MapContainer extends Component {
   render() {
     return (
     <div className='map-container'> 
-        <Map google={this.props.google} zoom={14} style={containerStyle}>
-            
-            <Marker onClick={this.onMarkerClick}
-                    name={'Current location'} />
-    
-            <InfoWindow onClose={this.onInfoWindowClose}>
+          <Map google={this.props.google} zoom={14} style={containerStyle}>
+              
+              <Marker onClick={this.onMarkerClick}
+                      name={'Current location'} />
+      
+              <InfoWindow onClose={this.onInfoWindowClose}>
 
-            </InfoWindow>
-        </Map>
+              </InfoWindow>
+          </Map>
     </div>
     );
   }
