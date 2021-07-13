@@ -11,3 +11,4 @@ const BreweryCard = ({ id, name, city, state, website_url}) => {
 }
 
 export default BreweryCard
+

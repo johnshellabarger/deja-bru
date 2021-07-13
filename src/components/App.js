@@ -7,7 +7,10 @@ import { Route, Switch } from 'react-router-dom'
 
 function App() {
   const [breweries, setBreweries] = useState([])
-  const [formData, setFormData] = useState(null)
+  const [formData, setFormData] = useState({
+    city: '',
+    state: ''
+  })
 
   function handleChange(e){
     setFormData(encodeURIComponent(e.target.value))

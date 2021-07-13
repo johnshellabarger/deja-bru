@@ -9,7 +9,7 @@ const Search = ({ handleChange, handleSubmit }) => {
             onChange={handleChange}
             type='text'
           />
-          {/* <select onChange={handleChange} class="ui search dropdown">
+          <select onChange={handleChange} class="ui search dropdown">
             <option value="">State</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -62,8 +62,8 @@ const Search = ({ handleChange, handleSubmit }) => {
             <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
-            </select> */}
-          <button onClick={handleSubmit} className='ui button' type="submit">Enter City</button>
+            </select>
+          <button onClick={handleSubmit} className='ui button' type="submit">Search Your City </button><i search></i>
       </div>
     )
 }
