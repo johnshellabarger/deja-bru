@@ -9,7 +9,7 @@ const Search = ({ handleChange, handleSubmit }) => {
             onChange={handleChange}
             type='text'
           />
-          <select onChange={handleChange} class="ui search dropdown" name='state'>
+          <select onChange={handleChange} className="ui search dropdown" name='state'>
             <option value="">State</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
