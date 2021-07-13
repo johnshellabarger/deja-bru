@@ -2,13 +2,22 @@ import React from 'react'
 import {FaBeer} from "react-icons/fa"
 import { useState } from 'react'
 
-const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, street }) => {
+
+const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, street, favorites }) => {
     const [isFavorited, setIsFavorited] = useState(false)
 
     function handleClick(e){
         handleFavorites(id)
         if(isFavorited === false)
         setIsFavorited(!isFavorited)
+    }
+
+    function findFavoritesInBreweries(){
+        for (const item of favorites) {
+            if (item.name === name) {
+                return true
+            } 
+        }
     }
 
     function renderImage(type) {
@@ -32,7 +41,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
 
     return (
         <div className='ui card'>
-            <div classname='ui image'>
+            <div className='ui image'>
                 <img className='ui small image centered' src={renderImage(brewery_type)} alt='beer'></img>
             </div>
             <div className='content'>
@@ -46,7 +55,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
             <div className='extra content'>
                 <span className='right floated'>{brewery_type}</span>
             </div>
-            { !isFavorited ? 
+            { !findFavoritesInBreweries() ? 
             <div onClick={handleClick} className='ui button attached button'><FaBeer/>&nbsp;Add Favorite</div> : 
             <div onClick={handleClick} className='ui button attached button' id='added-btn'>Added to Your Favorites</div>
             }   
