@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaSearch} from "react-icons/fa"
 
 const Search = ({ handleChange, handleSubmit }) => {
     return (
@@ -63,7 +64,7 @@ const Search = ({ handleChange, handleSubmit }) => {
             <option value="Wisconsin">Wisconsin</option>
             <option value="Wyoming">Wyoming</option>
             </select>
-          <button onClick={handleSubmit} className='ui button' type="submit">Enter City</button>
+          <button onClick={handleSubmit} className='ui button' type="submit">{<FaSearch />}&nbsp; Search Your City</button>
       </div>
     )
 }
