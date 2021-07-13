@@ -1,5 +1,6 @@
 import '../App.css';
 import Navbar from './Navbar';
+import LandingPage from './LandingPage';
 import Home from './Home'
 import Favorites from './Favorites';
 import { useState } from 'react';
@@ -37,6 +38,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Switch>
+        <Route exact path="/">
+            <LandingPage />
+        </Route>
         <Route exact path="/home">
           <Home
             breweries={breweries}
