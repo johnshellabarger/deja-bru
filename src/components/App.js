@@ -67,7 +67,7 @@ function App() {
         <Route exact path='/favorites'>
           <Favorites 
             favorites={favorites}
-            handleFavorites={handleFavorites}
+            setFavorites={setFavorites}
           />
         </Route>
       </Switch>
