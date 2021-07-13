@@ -8,6 +8,8 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
 
     function handleClick(e){
         handleFavorites(id)
+        if(isClicked === false)
+        console.log(e)
         setIsClicked(!isClicked)
     }
 
@@ -26,7 +28,10 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
             <div className='extra content'>
                 <span className='right floated'>{brewery_type}</span>
             </div>
-            <div onClick={handleClick} className='ui button attached button'><FaBeer/> { !isClicked ? `Add Favorite` : 'Added to your Favorites' }</div>
+            { !isClicked ? 
+            <div onClick={handleClick} className='ui button attached button'><FaBeer/>&nbsp;Add Favorite</div> : 
+            <div onClick={handleClick} className='ui button attached button' id='added-btn'>Added to Your Favorites</div>
+            }   
         </div>
     )
 }

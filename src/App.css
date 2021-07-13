@@ -65,3 +65,12 @@
 .ui.cards > .card > :last-child {
 	background-color: #f6c101;
 }
+
+.ui.card>:last-child, .ui.cards>.card>:last-child{
+	background-color:#F6C101;;
+}
+
+#added-btn{
+	background-color: #DF8D03;
+}
+
