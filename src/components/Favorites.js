@@ -5,7 +5,7 @@ import FavoriteCard from './FavoriteCard'
 const Favorites = ({ favorites, setFavorites }) => {
     return (
         <div>
-            <h1>Favorites</h1>
+            <h1 className='favorites-header'>Favorites</h1>
             <div className='ui link cards centered favorites'>
                 {favorites.map(favorite => {return (
                     <FavoriteCard 

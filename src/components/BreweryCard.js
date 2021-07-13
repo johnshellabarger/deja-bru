@@ -1,10 +1,12 @@
 import React from 'react'
-import {FaBeer} from "react-icons/fa"
+import { FaBeer } from "react-icons/fa"
+import { FaMap } from "react-icons/fa"
 import { useState } from 'react'
 
 
 const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, street, favorites }) => {
     const [isFavorited, setIsFavorited] = useState(false)
+    const [isVisited, setIsVisited] = useState(false)
 
     function handleClick(e){
         handleFavorites(id)
@@ -18,6 +20,10 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 return true
             } 
         }
+    }
+
+    function handleVisit(){
+        setIsVisited(!isVisited)
     }
 
     function renderImage(type) {
@@ -48,6 +54,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <div className='header'>{name}</div>
                 <span>{street}</span>
                 <div className='meta'> {city}, {state}</div>
+                <span onClick={handleVisit}><FaMap/>&nbsp;&nbsp;{!isVisited ? 'Visit Brewery' : 'Visited' }</span>
             </div>
             <div className='description'>
                 {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
