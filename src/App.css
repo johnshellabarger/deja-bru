@@ -70,7 +70,13 @@
 	background-color:#F6C101;;
 }
 
-#added-btn{
+.ui.card>:last-child, .ui.cards>.card>:last-child:hover{
 	background-color: #DF8D03;
 }
+
+#added-btn{
+	background-color: #C96E12
+}
+
+
 
