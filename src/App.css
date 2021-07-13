@@ -51,11 +51,17 @@
 	margin-top: 450px;
 }
 
-
-.ui.action.input:not([class*="left action"])>.button:last-child, .ui.action.input:not([class*="left action"])>.buttons:last-child>.button, .ui.action.input:not([class*="left action"])>.dropdown:last-child{
-	background-color: #DF8D03;
+.ui.centered.cards.favorites {
+	margin-top: 0px;
 }
 
-.ui.card>:last-child, .ui.cards>.card>:last-child{
-	background-color:#F6C101;
+.ui.action.input:not([class*="left action"]) > .button:last-child,
+.ui.action.input:not([class*="left action"]) > .buttons:last-child > .button,
+.ui.action.input:not([class*="left action"]) > .dropdown:last-child {
+	background-color: #df8d03;
+}
+
+.ui.card > :last-child,
+.ui.cards > .card > :last-child {
+	background-color: #f6c101;
 }
