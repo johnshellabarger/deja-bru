@@ -8,7 +8,6 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
     function handleClick(e){
         handleFavorites(id)
         if(isFavorited === false)
-        console.log(e)
         setIsFavorited(!isFavorited)
     }
 
