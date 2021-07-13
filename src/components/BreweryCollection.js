@@ -13,7 +13,6 @@ const BreweryCollection = ({ breweries }) => {
                     website_url = {brewery.website_url}
                 />
             )})}
-            
         </div>
     )
 }
