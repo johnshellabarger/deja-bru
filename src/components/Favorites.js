@@ -5,7 +5,7 @@ const Favorites = ({ favorites, handleFavorites }) => {
     return (
         <div>
             <h1>Favorites</h1>
-            <div className='ui link cards centered'>
+            <div className='ui link cards centered favorites'>
                 {favorites.map(favorite => {return (
                     <BreweryCard 
                     key = {favorite.id}

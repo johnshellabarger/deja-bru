@@ -51,9 +51,19 @@
 	margin-top: 450px;
 }
 
+.ui.centered.cards.favorites {
+	margin-top: 0px;
+}
 
-.ui.action.input:not([class*="left action"])>.button:last-child, .ui.action.input:not([class*="left action"])>.buttons:last-child>.button, .ui.action.input:not([class*="left action"])>.dropdown:last-child{
-	background-color: #DF8D03;
+.ui.action.input:not([class*="left action"]) > .button:last-child,
+.ui.action.input:not([class*="left action"]) > .buttons:last-child > .button,
+.ui.action.input:not([class*="left action"]) > .dropdown:last-child {
+	background-color: #df8d03;
+}
+
+.ui.card > :last-child,
+.ui.cards > .card > :last-child {
+	background-color: #f6c101;
 }
 
 .ui.card>:last-child, .ui.cards>.card>:last-child{
@@ -63,3 +73,4 @@
 #added-btn{
 	background-color: #DF8D03;
 }
+
