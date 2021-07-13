@@ -13,11 +13,19 @@ function App() {
   })
 
   function handleChange(e){
-    setFormData(encodeURIComponent(e.target.value))
+    let name = e.target.name
+    let value = encodeURIComponent(e.target.value)
+    setFormData({
+      ...formData,
+      [name]:value
+    })
+
+    
   }
 
+
   function handleSubmit(e){
-    fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData}&by_state=colorado`)
+    fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData.city}&by_state=${formData.state}`)
     .then(resp => resp.json())
     .then(data => setBreweries(data))
   }

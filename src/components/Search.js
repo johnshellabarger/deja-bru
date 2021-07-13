@@ -2,14 +2,14 @@ import React from 'react'
 
 const Search = ({ handleChange, handleSubmit }) => {
     return (
-        <div className='ui action input'>
+        <div className='ui action input' name='city'>
           <input
             className='ui input'
             name="city"
             onChange={handleChange}
             type='text'
           />
-          <select onChange={handleChange} class="ui search dropdown">
+          <select onChange={handleChange} class="ui search dropdown" name='state'>
             <option value="">State</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
