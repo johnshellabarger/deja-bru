@@ -11,7 +11,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type }) => {
                 <div className='meta'>{city}, {state}</div>
             </div>
             <div className='description'>
-                {website_url}
+                {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
             </div>
             <div className='extra content'>
                 <span className='right floated'>{brewery_type}</span>
