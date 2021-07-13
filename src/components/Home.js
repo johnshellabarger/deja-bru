@@ -1,6 +1,7 @@
 import React from 'react'
 import BreweryCollection from './BreweryCollection'
 import Search from './Search'
+import GoogleMap from './GoogleMap'
 
 const Home = ({ breweries, handleChange, handleSubmit }) => {
     return (
@@ -9,6 +10,7 @@ const Home = ({ breweries, handleChange, handleSubmit }) => {
                 handleChange={handleChange}
                 handleSubmit = {handleSubmit}
             />
+            <GoogleMap />
             <BreweryCollection 
                 breweries={breweries}
             />
