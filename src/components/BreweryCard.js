@@ -1,11 +1,14 @@
 import React from 'react'
 import {FaBeer} from "react-icons/fa"
+import { useState } from 'react'
 
 const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites }) => {
 
+ const [isClicked, setIsClicked] = useState(false)
+
     function handleClick(e){
-        console.log('working')
         handleFavorites(id)
+        setIsClicked(!isClicked)
     }
 
     return (
@@ -23,10 +26,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
             <div className='extra content'>
                 <span className='right floated'>{brewery_type}</span>
             </div>
-            <div onClick={handleClick} className='ui button attached button'>
-                <FaBeer />&nbsp;
-                Add Favorite
-            </div>
+            <div onClick={handleClick} className='ui button attached button'><FaBeer/> { !isClicked ? `Add Favorite` : 'Added to your Favorites' }</div>
         </div>
     )
 }
