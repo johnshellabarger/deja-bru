@@ -2,7 +2,7 @@ import React from 'react'
 import {FaBeer} from "react-icons/fa"
 import { useState } from 'react'
 
-const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites }) => {
+const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, street }) => {
     const [isFavorited, setIsFavorited] = useState(false)
 
     function handleClick(e){
@@ -37,7 +37,8 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
             </div>
             <div className='content'>
                 <div className='header'>{name}</div>
-                <div className='meta'>{city}, {state}</div>
+                <span>{street}</span>
+                <div className='meta'> {city}, {state}</div>
             </div>
             <div className='description'>
                 {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}

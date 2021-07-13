@@ -18,6 +18,7 @@ const BreweryCollection = ({ breweries, handleFavorites }) => {
                     website_url = {brewery.website_url}
                     brewery_type={brewery.brewery_type}
                     handleFavorites={handleFavorites}
+                    street={brewery.street}
                 />
             )})}
         </div>
