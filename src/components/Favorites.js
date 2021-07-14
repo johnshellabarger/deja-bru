@@ -8,7 +8,7 @@ const Favorites = ({ favorites, setFavorites }) => {
     
     const handleSort = (e) => {
         setSortBy(e.target.checked)
-        const sortedFavorites = [...favorites].sort(function(a,b) {
+        const sortedFavoritesByState = [...favorites].sort(function(a,b) {
             let nameA = a.state.toUpperCase()
             let nameB = b.state.toUpperCase()
             if (nameA < nameB) {
@@ -28,7 +28,7 @@ const Favorites = ({ favorites, setFavorites }) => {
                 return 1
             }
         })
-        sortBy ? setFavorites(sortedFavorites) : setFavorites(sortedFavoritesByAlphabet)
+        e.target.checked ? setFavorites(sortedFavoritesByState) : setFavorites(sortedFavoritesByAlphabet)
     }
 
     return (
