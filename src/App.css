@@ -41,7 +41,7 @@
 .map-container:first-child {
 	position: absolute;
 	width: 100vw;
-	height: 75vw;
+	height: 50vw;
 	margin-left: 25%;
 	margin-right: 25%;
 	margin-bottom: 2%;
@@ -56,9 +56,13 @@
 }
 
 .ui.centered.cards {
-	margin-top: 42%;
+	margin-top: 27%;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+#visited-breweries {
+	margin-top: 27%;
 }
 
 .ui.centered.cards.favorites {
@@ -391,8 +395,4 @@ body {
 .comments {
 	margin-right: 150px;
 	margin-bottom: 10px;
-}
-
-#visited-breweries {
-	margin-top: 42%;
 }
