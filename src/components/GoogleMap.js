@@ -11,17 +11,37 @@ import React, { Component } from 'react'
   export class MapContainer extends Component {
     render() {
       const breweryData = this.props.breweries
-      console.log(breweryData)
     return (
     <div className='map-container'> 
-          <Map google={this.props.google} zoom={14} style={containerStyle}>
+          <Map 
+            google={this.props.google} 
+            zoom={4} 
+            style={containerStyle}
+            >
               
-          {breweryData.map((bar)=> console.log(bar))}              
+            {breweryData.map(bar => {
+              return(
+                <Marker 
+                  position={{
+                    lat: bar.latitude,
+                    lng: bar.longitude
+                  }}
+                />
+              )
+            })}
+              
+            {/* {breweryData.map(bar => {
+              return(
+                <Marker
+                  lat={bar.latitude}
+                  lng={bar.longitude}
+                />
+              )
+            })}          */}
 
-      
-              <InfoWindow onClose={this.onInfoWindowClose}>
+            <InfoWindow onClose={this.onInfoWindowClose}>
 
-              </InfoWindow>
+            </InfoWindow>
           </Map>
     </div>
     );
