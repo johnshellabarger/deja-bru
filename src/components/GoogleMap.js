@@ -29,19 +29,7 @@ import React, { Component } from 'react'
                 />
               )
             })}
-              
-            {/* {breweryData.map(bar => {
-              return(
-                <Marker
-                  lat={bar.latitude}
-                  lng={bar.longitude}
-                />
-              )
-            })}          */}
-
-            <InfoWindow onClose={this.onInfoWindowClose}>
-
-            </InfoWindow>
+  
           </Map>
     </div>
     );

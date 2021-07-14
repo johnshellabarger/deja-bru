@@ -376,8 +376,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-a:hover {
-}
+
 
 #visited {
 	color: red;
@@ -386,3 +385,15 @@ a:hover {
 .ui.huge.list {
 	display: inline-table;
 }
+
+.comments{
+	margin-right:150px;
+	margin-bottom: 10px;
+}
+
+
+#visited-breweries{
+	margin-top: 30%;
+}
+
+

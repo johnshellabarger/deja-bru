@@ -44,7 +44,6 @@ function App() {
 
   function handleVisited(id){
     const clickedBrewery = breweries.find(brewery => brewery.id === id)
-    console.log(clickedBrewery)
     if(!visitedBreweries.find(visited => visited.id === id)){
       setVisitedBreweries([...visitedBreweries, clickedBrewery])
       fetch(`http://localhost:3000/visited`, {

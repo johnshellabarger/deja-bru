@@ -1,12 +1,15 @@
 import React from 'react'
 import VisitedBreweriesCard from './VisitedBreweriesCard'
-import GoogleMap from './GoogleMap'
+import GoogleMapVisited from './GoogleMapVisited'
 
 const VisitedBreweriesCollection = ({ visitedBreweries }) => {
     return (
         <>
             <h1 className='favorites-header'>Visited Breweries</h1>
-            <div className='ui huge list'>
+                <GoogleMapVisited
+                    visitedBreweries={visitedBreweries}
+                />
+            <div id='visited-breweries' className='ui huge list'>
                 {visitedBreweries.map(brewery => {return (
                     <VisitedBreweriesCard 
                         name={brewery.name}
@@ -21,3 +24,6 @@ const VisitedBreweriesCollection = ({ visitedBreweries }) => {
 }
 
 export default VisitedBreweriesCollection
+
+
+
