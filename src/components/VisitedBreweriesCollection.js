@@ -4,7 +4,7 @@ import GoogleMapVisited from './GoogleMapVisited'
 
 const VisitedBreweriesCollection = ({ visitedBreweries }) => {
     return (
-        <>
+        <div className='visited'>
             <h1 className='favorites-header'>Visited Breweries</h1>
                 <GoogleMapVisited
                     visitedBreweries={visitedBreweries}
@@ -19,7 +19,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries }) => {
                     />
                 )})}
             </div>    
-        </>
+        </div>
     )
 }
 
