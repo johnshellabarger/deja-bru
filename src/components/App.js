@@ -42,7 +42,6 @@ function App() {
   }
 
   function handleVisited(id){
-    console.log(id)
     const clickedBrewery = breweries.find(brewery => brewery.id === id)
     console.log(clickedBrewery)
     if(!visitedBreweries.find(visited => visited.id === id)){
@@ -74,7 +73,7 @@ function App() {
   }
 
   function handleSubmit(e){
-    fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData.city}&by_state=${formData.state}`)
+    fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData.city}&by_state=${formData.state.toLowerCase()}`)
     .then(resp => resp.json())
     .then(data => setBreweries(data))
   }
