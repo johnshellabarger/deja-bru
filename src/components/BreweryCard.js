@@ -67,18 +67,18 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
             <div className='ui small centered image'>
                 <img src={renderImage(brewery_type)} alt='beer'></img>
             </div>
-            <div className='content'>
+            <div className='content' id='brewery'>
                 <div className='header'>{name}</div>
-                {street ? <span>{street}</span> : <span>---</span>}
-                <div className='meta'> {city}, {state}</div>
-                <span onClick={handleVisit}>{!compareArrayWithBrewery(visitedBreweries) ? <span><FaMap/>&nbsp;Visit Brewery</span> : <span id='visited'><FaMap/>&nbsp;Visited</span> }</span>
+                {street ? <span id='street'>{street}</span> : <span>---</span>}
+                {/* <div className='meta'> {city}, {state}</div> */}
+                <p onClick={handleVisit}>{!compareArrayWithBrewery(visitedBreweries) ? <span id='visitedBrewery'><FaMap/>&nbsp;Visit Brewery</span> : <span id='visited'><FaMap/>&nbsp;Visited</span> }</p>
             </div>
             
-                {website_url ? <a target='_blank' href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
-                <p className=''>{brewery_type}</p>
+                {website_url ? <a target='_blank' href={website_url}>Visit Brewery Website</a> : <a>No Website Available 😒</a>}
+                <p className='brewery-type'>{brewery_type}</p>
             
             <div className='extra content'>
-                <p>{addDashesToNumber(phoneNumber)}</p>
+                <div id='phone'>Ph: {addDashesToNumber(phoneNumber)}</div>
             </div>
             { !compareArrayWithBrewery(favorites) ? 
             <div onClick={handleClick} className='ui button attached button'><FaBeer/>&nbsp;Add Favorite</div> : 

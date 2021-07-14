@@ -55,12 +55,12 @@ const Favorites = ({ favorites, setFavorites }) => {
     return (
         <div>
             <h1 className='favorites-header'>Favorite Breweries</h1>
-            <div className='inline field'>
-                <div className='ui toggle checkbox'>
+            <div className='sorting-btns'>
+                <div id='sort-btn' className='ui toggle checkbox'>
                     <input onChange={handleSortByState} type='checkbox' checked={sortByState} tabindex='0' name='sort'></input>
                     <label>Sort By State</label>
                 </div><br></br><br></br>
-                <div className='ui toggle checkbox'>
+                <div id='sort-btn' className='ui toggle checkbox'>
                     <input onChange={handleSortByName} type='checkbox' checked={sortByName} tabindex='0' name='sort'></input>
                     <label>Sort By Name</label>
                 </div>     

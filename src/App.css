@@ -384,7 +384,7 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-#visited {
+#visited{
 	color: red;
 }
 
@@ -401,4 +401,30 @@ body {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+}
+
+.brewery-type{
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+#phone{
+	margin-bottom: -6px;
+	margin-top: -6px;
+}
+
+#brewery{
+	margin-bottom:-10px;
+}
+
+#street{
+	font-size: 12px;
+}
+
+.sorting-btns{
+	display: inline-flex;
+}
+
+#sort-btn{
+	margin-left:20px;
 }
