@@ -6,7 +6,6 @@ import Favorites from './Favorites';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom'
 
-
 function App() {
   const [breweries, setBreweries] = useState([])
   const [formData, setFormData] = useState({
