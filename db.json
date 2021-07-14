@@ -501,6 +501,46 @@
       "website_url": "http://www.blackprojectbeer.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
       "created_at": "2018-07-24T00:00:00.000Z"
+    },
+    {
+      "id": 9550,
+      "obdb_id": "canyon-creek-brewing-billings",
+      "name": "Canyon Creek Brewing",
+      "brewery_type": "micro",
+      "street": "3060 Gabel Rd",
+      "address_2": null,
+      "address_3": null,
+      "city": "Billings",
+      "state": "Montana",
+      "county_province": null,
+      "postal_code": "59102-7336",
+      "country": "United States",
+      "longitude": "-108.5916752",
+      "latitude": "45.74436502",
+      "phone": "4066562528",
+      "website_url": "http://www.canyoncreekbrewing.com",
+      "updated_at": "2018-08-24T00:00:00.000Z",
+      "created_at": "2018-07-24T00:00:00.000Z"
+    },
+    {
+      "id": 8369,
+      "obdb_id": "angry-hank-s-microbrewery-billings",
+      "name": "Angry Hank's Microbrewery",
+      "brewery_type": "micro",
+      "street": "20 N 30th St",
+      "address_2": null,
+      "address_3": null,
+      "city": "Billings",
+      "state": "Montana",
+      "county_province": null,
+      "postal_code": "59101-2140",
+      "country": "United States",
+      "longitude": "-108.5076025",
+      "latitude": "45.78022173",
+      "phone": "4062523370",
+      "website_url": null,
+      "updated_at": "2018-08-24T00:00:00.000Z",
+      "created_at": "2018-07-24T00:00:00.000Z"
     }
   ]
 }

@@ -73,12 +73,12 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <div className='meta'> {city}, {state}</div>
                 <span onClick={handleVisit}>{!compareArrayWithBrewery(visitedBreweries) ? <span><FaMap/>&nbsp;Visit Brewery</span> : <span id='visited'><FaMap/>&nbsp;Visited</span> }</span>
             </div>
-            <div className='description'>
+            
                 {website_url ? <a target='_blank' href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
-            </div>
+                <p className=''>{brewery_type}</p>
+            
             <div className='extra content'>
                 <p>{addDashesToNumber(phoneNumber)}</p>
-                <span className='right floated'>{brewery_type}</span>
             </div>
             { !compareArrayWithBrewery(favorites) ? 
             <div onClick={handleClick} className='ui button attached button'><FaBeer/>&nbsp;Add Favorite</div> : 
