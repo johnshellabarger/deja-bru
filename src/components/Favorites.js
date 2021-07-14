@@ -28,7 +28,7 @@ const Favorites = ({ favorites, setFavorites }) => {
                 return 1
             }
         })
-        e.target.checked ? setFavorites(sortedFavorites) : setFavorites(sortedFavoritesByAlphabet)
+        sortBy ? setFavorites(sortedFavorites) : setFavorites(sortedFavoritesByAlphabet)
     }
 
     return (
@@ -37,7 +37,7 @@ const Favorites = ({ favorites, setFavorites }) => {
             <div className='inline field'>
                 <div className='ui toggle checkbox'>
                     <input onChange={handleSort} type='checkbox' tabindex='0' name='sort'></input>
-                    <label>Sort By State or Name</label>
+                    <label>Sort By Name or State</label>
                 </div>     
             </div>
             <h1>Sorted by {sortBy ? 'State' : 'Name'}</h1>
