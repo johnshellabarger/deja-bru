@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaTrash} from "react-icons/fa"
+import {FaCommentAlt} from "react-icons/fa"
 
 const FavoriteCard = ({ id, brewery_type, name, city, state, website_url, favorites, setFavorites}) => {
     const handleDelete = () => {
@@ -19,7 +20,8 @@ const FavoriteCard = ({ id, brewery_type, name, city, state, website_url, favori
                     {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
                 </div>
             </div>
-            <div onClick={handleDelete} className='ui button attached button' id='delete-btn'>{<FaTrash />}Remove From Favorites</div>
+            <span><FaCommentAlt /></span>
+            <div onClick={handleDelete} className='ui button attached button' id='delete-btn'>{<FaTrash />}&nbsp;&nbsp;Remove From Favorites</div>
         </div>
     )
 }
