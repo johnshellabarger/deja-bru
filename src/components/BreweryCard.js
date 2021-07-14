@@ -4,8 +4,6 @@ import { FaMap } from "react-icons/fa"
 import { useState } from 'react'
 
 
-
-
 const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, handleVisited, street, favorites, visitedBreweries, phoneNumber }) => {
 
     const [isFavorited, setIsFavorited] = useState(false)
