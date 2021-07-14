@@ -388,11 +388,37 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-#visited {
+#visited{
 	color: red;
 }
 
 .comments {
 	margin-right: 150px;
 	margin-bottom: 10px;
+}
+
+.brewery-type{
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+#phone{
+	margin-bottom: -6px;
+	margin-top: -6px;
+}
+
+#brewery{
+	margin-bottom:-10px;
+}
+
+#street{
+	font-size: 12px;
+}
+
+.sorting-btns{
+	display: inline-flex;
+}
+
+#sort-btn{
+	margin-left:20px;
 }
