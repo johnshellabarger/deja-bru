@@ -5,6 +5,7 @@ import Home from './Home'
 import Favorites from './Favorites';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom'
+import VisitedBreweriesCollection from './VisitedBreweriesCollection';
 
 function App() {
   const [breweries, setBreweries] = useState([])
@@ -94,6 +95,11 @@ function App() {
             handleSubmit={handleSubmit}
             handleFavorites={handleFavorites}
             handleVisited={handleVisited}
+          />
+        </Route>
+        <Route exact path='/visited'>
+          <VisitedBreweriesCollection 
+            visitedBreweries={visitedBreweries}
           />
         </Route>
         <Route exact path='/favorites'>
