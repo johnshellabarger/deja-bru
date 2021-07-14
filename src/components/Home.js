@@ -10,7 +10,9 @@ const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorite
                 handleChange={handleChange}
                 handleSubmit = {handleSubmit}
             />
-            <GoogleMap />
+            <GoogleMap
+                breweries={breweries}
+            />
             <BreweryCollection
                 handleFavorites={handleFavorites} 
                 handleVisited={handleVisited}
