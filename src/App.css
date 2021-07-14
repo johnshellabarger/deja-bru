@@ -96,7 +96,7 @@ body {
 #background-wrap {
 	bottom: 0;
 	/* background-color: #ec9d00; */
-	background-image: linear-gradient(180deg,#ec9d00, #C96E12);
+	background-image: linear-gradient(180deg, #ec9d00, #c96e12);
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -372,14 +372,17 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-.favorites-header{
+.favorites-header {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
 a:hover {
-	
 }
 
-#visited{
-	color:red;
+#visited {
+	color: red;
+}
+
+.ui.huge.list {
+	display: inline-table;
 }
