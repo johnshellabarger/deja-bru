@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <h3>John Shellabarger & Steve Vaughn </h3>
-            <span><p>GitHub Repo</p><a href='https://github.com/johnshellabarger/deja-bru'><FaGithub size={30}/></a></span>
+            <a target='_blank' href='https://github.com/johnshellabarger/deja-bru'><FaGithub size={20}/></a>
         </div>    
     )
 }

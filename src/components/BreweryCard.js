@@ -64,7 +64,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
 
     return (
         <div className='ui card'>
-            <div className='ui small centered image'>
+            <div className='ui medium centered image'>
                 <img src={renderImage(brewery_type)} alt='beer'></img>
             </div>
             <div className='content' id='brewery'>

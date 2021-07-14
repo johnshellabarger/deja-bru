@@ -3,7 +3,7 @@ import BreweryCard from './BreweryCard'
 
 const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorites, visitedBreweries }) => {        
     return (
-        <div className='ui link cards centered'>
+        <div className='ui six cards centered'>
             {breweries.map(brewery => { return (
                 <BreweryCard 
                     brewery={brewery}
