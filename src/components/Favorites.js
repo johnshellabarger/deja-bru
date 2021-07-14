@@ -1,9 +1,13 @@
 import React from 'react'
+import { useState } from 'react';
 import FavoriteCard from './FavoriteCard'
 
 
 const Favorites = ({ favorites, setFavorites }) => {  
+    const [sortBy, setSortBy] = useState(false)
+    
     const handleSort = (e) => {
+        setSortBy(e.target.checked)
         const sortedFavorites = [...favorites].sort(function(a,b) {
             let nameA = a.state.toUpperCase()
             let nameB = b.state.toUpperCase()
@@ -33,9 +37,10 @@ const Favorites = ({ favorites, setFavorites }) => {
             <div className='inline field'>
                 <div className='ui toggle checkbox'>
                     <input onChange={handleSort} type='checkbox' tabindex='0' name='sort'></input>
-                    <label>Sort By State</label>
+                    <label>Sort By State or Name</label>
                 </div>     
             </div>
+            <h1>Sorted by {sortBy ? 'State' : 'Name'}</h1>
             <div className='ui link cards centered favorites'>
                 {favorites.map(favorite => {return (
                     <FavoriteCard 
