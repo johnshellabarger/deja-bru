@@ -2,6 +2,7 @@ import React from 'react'
 import BreweryCollection from './BreweryCollection'
 import Search from './Search'
 import GoogleMap from './GoogleMap'
+import Footer from './Footer'
 
 const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorites, handleVisited, visitedBreweries }) => {
     return (
@@ -21,6 +22,7 @@ const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorite
                 favorites={favorites}
                 visitedBreweries={visitedBreweries}
             />
+            <Footer />
         </div>
     )
 }

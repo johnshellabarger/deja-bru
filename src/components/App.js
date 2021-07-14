@@ -3,7 +3,6 @@ import Navbar from './Navbar';
 import LandingPage from './LandingPage';
 import Home from './Home'
 import Favorites from './Favorites';
-import Footer from './Footer';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom'
 import VisitedBreweriesCollection from './VisitedBreweriesCollection';
@@ -109,7 +108,6 @@ function App() {
           />
         </Route>
       </Switch>
-      <Footer />
     </div>
   );
 }

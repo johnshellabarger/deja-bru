@@ -1,10 +1,11 @@
 import React from 'react'
 import VisitedBreweriesCard from './VisitedBreweriesCard'
 import GoogleMapVisited from './GoogleMapVisited'
+import Footer from './Footer'
 
 const VisitedBreweriesCollection = ({ visitedBreweries }) => {
     return (
-        <div className='visited'>
+        <div>
             <h1 className='favorites-header'>Visited Breweries</h1>
                 <GoogleMapVisited
                     visitedBreweries={visitedBreweries}
@@ -18,7 +19,8 @@ const VisitedBreweriesCollection = ({ visitedBreweries }) => {
                         website_url={brewery.website_url}
                     />
                 )})}
-            </div>    
+            </div> 
+            <Footer />   
         </div>
     )
 }

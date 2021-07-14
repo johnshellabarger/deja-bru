@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import FavoriteCard from './FavoriteCard'
+import Footer from './Footer'
 
 
 const Favorites = ({ favorites, setFavorites }) => {  
@@ -80,6 +81,7 @@ const Favorites = ({ favorites, setFavorites }) => {
                 />
                 )})}
             </div>
+            <Footer />
         </div>
     )
 }
