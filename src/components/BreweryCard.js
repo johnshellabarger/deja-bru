@@ -8,6 +8,20 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
 
     const [isFavorited, setIsFavorited] = useState(false)
     const [isVisited, setIsVisited] = useState(false)
+    
+    function addDashesToNumber(number){
+        if(number){
+            const numWithoutDashes = number.replace(/[^0-9]/g, '')
+            if(numWithoutDashes.length > 10) return number.slice(0, -1)
+            const dashPlaces = [3, 6]
+            return numWithoutDashes
+                        .split('')
+                        .reduce((acc, curr, i) => dashPlaces.includes(i) ? [...acc, '-', curr] : [...acc, curr], [])
+                        .join('')
+        } else {
+            return '---'
+        }
+    }
 
     function handleClick(e){
         handleFavorites(id)
@@ -60,10 +74,10 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <span onClick={handleVisit}>{!compareArrayWithBrewery(visitedBreweries) ? <span><FaMap/>&nbsp;Visit Brewery</span> : <span id='visited'><FaMap/>&nbsp;Visited</span> }</span>
             </div>
             <div className='description'>
-                {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
+                {website_url ? <a target='_blank' href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
             </div>
             <div className='extra content'>
-                <p>{phoneNumber}</p>
+                <p>{addDashesToNumber(phoneNumber)}</p>
                 <span className='right floated'>{brewery_type}</span>
             </div>
             { !compareArrayWithBrewery(favorites) ? 

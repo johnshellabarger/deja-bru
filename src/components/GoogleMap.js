@@ -17,6 +17,10 @@ import React, { Component } from 'react'
             google={this.props.google} 
             zoom={4} 
             style={containerStyle}
+            initialCenter={{
+              lat: 38.854885,
+              lng: -98.081807
+            }}
             >
               
             {breweryData.map(bar => {

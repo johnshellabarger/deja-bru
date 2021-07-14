@@ -21,26 +21,6 @@
       "created_at": "2018-07-24T00:00:00.000Z"
     },
     {
-      "id": 9060,
-      "obdb_id": "blue-moon-brewery-denver",
-      "name": "Blue Moon Brewery",
-      "brewery_type": "large",
-      "street": "3750 Chestnut Pl",
-      "address_2": null,
-      "address_3": null,
-      "city": "Denver",
-      "state": "Colorado",
-      "county_province": null,
-      "postal_code": "80216-3632",
-      "country": "United States",
-      "longitude": "-104.9769417",
-      "latitude": "39.7735561",
-      "phone": null,
-      "website_url": null,
-      "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
-    },
-    {
       "id": 9414,
       "obdb_id": "bruz-beers-denver",
       "name": "Bruz Beers",
@@ -239,28 +219,6 @@
       "website_url": "http://www.epicbrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
       "created_at": "2018-07-24T00:00:00.000Z"
-    }
-  ],
-  "visited": [
-    {
-      "id": 8998,
-      "obdb_id": "black-project-spontaneous-wild-ales-denver",
-      "name": "Black Project Spontaneous & Wild Ales",
-      "brewery_type": "micro",
-      "street": "1290 S Broadway",
-      "address_2": null,
-      "address_3": null,
-      "city": "Denver",
-      "state": "Colorado",
-      "county_province": null,
-      "postal_code": "80210-1504",
-      "country": "United States",
-      "longitude": "-104.9872018",
-      "latitude": "39.6933607",
-      "phone": "7203342873",
-      "website_url": "http://www.blackprojectbeer.com",
-      "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
     },
     {
       "id": 8063,
@@ -281,7 +239,9 @@
       "website_url": "http://www.14erBrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
       "created_at": "2018-07-24T00:00:00.000Z"
-    },
+    }
+  ],
+  "visited": [
     {
       "id": 10909,
       "obdb_id": "galaxy-brewing-co-binghamton",
@@ -520,6 +480,26 @@
       "phone": "9143566809",
       "website_url": "http://www.acbnyc.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
+      "created_at": "2018-07-24T00:00:00.000Z"
+    },
+    {
+      "id": 8998,
+      "obdb_id": "black-project-spontaneous-wild-ales-denver",
+      "name": "Black Project Spontaneous & Wild Ales",
+      "brewery_type": "micro",
+      "street": "1290 S Broadway",
+      "address_2": null,
+      "address_3": null,
+      "city": "Denver",
+      "state": "Colorado",
+      "county_province": null,
+      "postal_code": "80210-1504",
+      "country": "United States",
+      "longitude": "-104.9872018",
+      "latitude": "39.6933607",
+      "phone": "7203342873",
+      "website_url": "http://www.blackprojectbeer.com",
+      "updated_at": "2018-08-24T00:00:00.000Z",
       "created_at": "2018-07-24T00:00:00.000Z"
     }
   ]

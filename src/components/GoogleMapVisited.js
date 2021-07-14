@@ -20,8 +20,8 @@ import React, { Component } from 'react'
                 zoom={4} 
                 style={containerStyle}
                 initialCenter={{
-                    lat: 40.854885,
-                    lng: -88.081807
+                    lat: 38.854885,
+                    lng: -98.081807
                   }}
                 >
 
