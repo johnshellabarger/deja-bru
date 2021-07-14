@@ -25,7 +25,7 @@ const Navbar = () => {
                 <Menu.Item
                     to='/visited'
                     name='Visited'
-                    active={activeItem === 'Favorites'}
+                    active={activeItem === 'Visited'}
                     onClick={handleClick}
                 />
             </NavLink>
