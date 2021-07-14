@@ -6,6 +6,8 @@ import Favorites from './Favorites';
 import { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom'
 
+console.log(process.env.REACT_APP_GOOGLE_API_KEY)
+
 function App() {
   const [breweries, setBreweries] = useState([])
   const [formData, setFormData] = useState({

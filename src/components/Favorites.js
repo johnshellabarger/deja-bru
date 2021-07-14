@@ -2,10 +2,40 @@ import React from 'react'
 import FavoriteCard from './FavoriteCard'
 
 
-const Favorites = ({ favorites, setFavorites }) => {
+const Favorites = ({ favorites, setFavorites }) => {  
+    const handleSort = (e) => {
+        const sortedFavorites = [...favorites].sort(function(a,b) {
+            let nameA = a.state.toUpperCase()
+            let nameB = b.state.toUpperCase()
+            if (nameA < nameB) {
+                return -1
+            }
+            if(nameA > nameB) {
+                return 1
+            }
+        })
+        const sortedFavoritesByAlphabet = [...favorites].sort(function(a,b) {
+            let nameA = a.name.toUpperCase()
+            let nameB = b.name.toUpperCase()
+            if (nameA < nameB) {
+                return -1
+            }
+            if(nameA > nameB) {
+                return 1
+            }
+        })
+        e.target.checked ? setFavorites(sortedFavorites) : setFavorites(sortedFavoritesByAlphabet)
+    }
+
     return (
         <div>
             <h1 className='favorites-header'>Favorites</h1>
+            <div className='inline field'>
+                <div className='ui toggle checkbox'>
+                    <input onChange={handleSort} type='checkbox' tabindex='0' name='sort'></input>
+                    <label>Sort By State</label>
+                </div>     
+            </div>
             <div className='ui link cards centered favorites'>
                 {favorites.map(favorite => {return (
                     <FavoriteCard 
