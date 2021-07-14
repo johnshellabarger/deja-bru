@@ -10,7 +10,7 @@ const Navbar = () => {
     }
 
     return (
-        <Menu fixed='top'>
+        <Menu fixed='top' size='huge'>
             <NavLink to='/'>
                 <Menu.Item header to='/home' onClick={handleClick} name='home'>Deja-Bru</Menu.Item>
             </NavLink>
