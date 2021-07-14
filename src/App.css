@@ -38,16 +38,25 @@
 	}
 }
 
-.home {
-	min-height: calc(100vh - 40px);
+.map-container:first-child {
+	position: absolute;
+	width: 100vw;
+	height: 75vw;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 2%;
 }
 
-.visited {
-	min-height: calc(100vh - 40px);
+.ui.action.input {
+	margin-bottom: 2%;
+}
+
+.ui.huge.list {
+	margin-top: 30%;
 }
 
 .ui.centered.cards {
-	margin-top: 40%;
+	margin-top: 42%;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -379,15 +388,11 @@ body {
 	color: red;
 }
 
-.ui.huge.list {
-	display: inline-table;
-}
-
 .comments {
 	margin-right: 150px;
 	margin-bottom: 10px;
 }
 
 #visited-breweries {
-	margin-top: 30%;
+	margin-top: 42%;
 }
