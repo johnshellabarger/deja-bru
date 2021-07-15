@@ -106,46 +106,6 @@
       "created_at": "2018-07-24T00:00:00.000Z",
       "rating": 4
     },
-    {
-      "id": 8245,
-      "obdb_id": "aero-craft-brewing-denver",
-      "name": "Aero Craft Brewing",
-      "brewery_type": "planning",
-      "street": null,
-      "address_2": null,
-      "address_3": null,
-      "city": "Denver",
-      "state": "Colorado",
-      "county_province": null,
-      "postal_code": "80212-2199",
-      "country": "United States",
-      "longitude": "-104.984696",
-      "latitude": "39.7391428",
-      "phone": "3039185446",
-      "website_url": "http://www.aerocraft.beer",
-      "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
-    },
-    {
-      "id": 11027,
-      "obdb_id": "good-river-beer-company-denver",
-      "name": "Good River Beer Company",
-      "brewery_type": "contract",
-      "street": "1790 S Bannock St.",
-      "address_2": null,
-      "address_3": null,
-      "city": "Denver",
-      "state": "Colorado",
-      "county_province": null,
-      "postal_code": "80223",
-      "country": "United States",
-      "longitude": "-104.9898169",
-      "latitude": "39.68421218",
-      "phone": "6023697442",
-      "website_url": "http://www.grbeerco.com",
-      "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
-    }
   ],
   "visited": [
     {
@@ -252,26 +212,6 @@
       "updated_at": "2018-08-11T00:00:00.000Z",
       "created_at": "2018-07-24T00:00:00.000Z",
       "rating": 4
-    },
-    {
-      "id": 9645,
-      "obdb_id": "cerebral-brewing-denver",
-      "name": "Cerebral Brewing",
-      "brewery_type": "micro",
-      "street": "1477 Monroe St",
-      "address_2": null,
-      "address_3": null,
-      "city": "Denver",
-      "state": "Colorado",
-      "county_province": null,
-      "postal_code": "80206-2708",
-      "country": "United States",
-      "longitude": "-104.9451783",
-      "latitude": "39.73968253",
-      "phone": "3039277365",
-      "website_url": "http://www.cerebralbrewing.com",
-      "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
     },
     {
       "id": 8245,
