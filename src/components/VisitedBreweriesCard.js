@@ -1,8 +1,11 @@
 import React from 'react'
+import { useState } from 'react';
 import { FaBeer } from "react-icons/fa"
 import { Rating } from 'semantic-ui-react'
 
-const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, rating, id, setSubmittedRating }) => {
+const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, rating, id, setSubmittedRating, handleFavorites }) => {
+    const [isFavorited, setIsFavorited] = useState(false)
+    
     function handleRatingChange(e){
         const clickedRating = parseInt(e.target.getAttribute('aria-posinset'))
         fetch(`http://localhost:3000/visited/${id}`, {
@@ -24,10 +27,17 @@ const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, ratin
             } 
         }
     }
+
+    function handleFavorite(e){
+        handleFavorites(id)
+        if(isFavorited === false)
+        setIsFavorited(true)
+    }
     
     return (
         <tr>
-            <td data-label='Name'>{name}&nbsp;&nbsp;{compareArrayWithBrewery(favorites) ? <FaBeer/> : null}</td>
+            <td data-label='Add to Favorites'>{compareArrayWithBrewery(favorites) ? 'Already Favorited' : <button className='ui icon button orange' onClick={handleFavorite}><FaBeer/>&nbsp;&nbsp;Cheers!</button>}</td>
+            <td data-label='Name'>{name}</td>
             <td data-label='Location'>{city}, {state}</td>
             <td data-label='Rating'>
                 <Rating icon='star' onRate={handleRatingChange} defaultRating={rating} maxRating={5} />

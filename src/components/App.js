@@ -31,7 +31,8 @@ function App() {
   }, [submittedRating])
 
   function handleFavorites(id){
-    const favoritedBrewery = breweries.find(brewery => brewery.id === id)
+    const favoritedBrewery = visitedBreweries.find(brewery => brewery.id === id)
+    console.log(favoritedBrewery)
     if(!favorites.find(fav => fav.id === id)){
       setFavorites([...favorites, favoritedBrewery])
     }
@@ -105,6 +106,7 @@ function App() {
             setVisitedBreweries={setVisitedBreweries}
             submittedRating={submittedRating}
             setSubmittedRating={setSubmittedRating}
+            handleFavorites={handleFavorites}
           />
         </Route>
         <Route exact path='/favorites'>

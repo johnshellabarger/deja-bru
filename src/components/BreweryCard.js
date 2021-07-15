@@ -6,7 +6,6 @@ import { useState } from 'react'
 
 const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleFavorites, handleVisited, street, favorites, visitedBreweries, phoneNumber }) => {
 
-    const [isFavorited, setIsFavorited] = useState(false)
     const [isVisited, setIsVisited] = useState(false)
     
     function addDashesToNumber(number){
@@ -15,20 +14,14 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
             if(numWithoutDashes.length > 10) return number.slice(0, -1)
             const dashPlaces = [3, 6]
             return numWithoutDashes
-                        .split('')
-                        .reduce((acc, curr, i) => dashPlaces.includes(i) ? [...acc, '-', curr] : [...acc, curr], [])
-                        .join('')
+            .split('')
+            .reduce((acc, curr, i) => dashPlaces.includes(i) ? [...acc, '-', curr] : [...acc, curr], [])
+            .join('')
         } else {
             return '---'
         }
     }
-
-    function handleClick(e){
-        handleFavorites(id)
-        if(isFavorited === false)
-        setIsFavorited(!isFavorited)
-    }
-
+    
     function compareArrayWithBrewery(array){
         for (const item of array) {
             if (item.name === name) {
@@ -37,7 +30,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
         }
     }
 
-    function handleVisit(e){
+    function handleClick(e){
         handleVisited(id)
         if(isVisited === false)
         setIsVisited(!isVisited)
@@ -73,18 +66,18 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <div className='header'>{name}</div>
                 {street ? <span id='street'>{street}</span> : <span>---</span>}
                 {/* <div className='meta'> {city}, {state}</div> */}
-                <p onClick={handleVisit}>{!compareArrayWithBrewery(visitedBreweries) ? <span id='visitedBrewery'><FaMap/>&nbsp;Visit Brewery</span> : <span id='visited'><FaMap/>&nbsp;Visited</span> }</p>
+                <p>{compareArrayWithBrewery(favorites) ? <span id='visitedBrewery'><FaBeer/>&nbsp;Favorited Brewery!</span> : null }</p>
             </div>
             
-                {website_url ? <a target='_blank' rel="noreferrer" href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒</p>}
+                {website_url ? <a target='_blank' rel="noreferrer" href={website_url}>Visit Brewery Website</a> : <>No Website Available 😒</>}
                 <p className='brewery-type'>{brewery_type}</p>
             
             <div className='extra content'>
                 <div id='phone'>Ph: {addDashesToNumber(phoneNumber)}</div>
             </div>
-            { !compareArrayWithBrewery(favorites) ? 
-            <div onClick={handleClick} className='ui button attached button'><FaBeer/>&nbsp;Add Favorite</div> : 
-            <div onClick={handleClick} className='ui button attached button' id='added-btn'>Added to Your Favorites</div>
+            { !compareArrayWithBrewery(visitedBreweries) ? 
+            <div onClick={handleClick} className='ui button attached button'><FaBeer/>&nbsp;Add to Visited</div> : 
+            <div onClick={handleClick} className='ui button attached button' id='added-btn'>Already Visited</div>
             }   
         </div>
     )
