@@ -44,22 +44,24 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
     }
 
     function renderImage(type) {
+        let imageToReturn
         switch(type) {
             case 'large':
-                return 'https://lh3.googleusercontent.com/pw/AM-JKLUurvWjiGCWpQhYv4cDD06IhPnGH1CRH40XPosqvM82uTdMy71ZQ3N4o-TeepdxTrdO5pdLhiKYi9Cvex1nV_z27bIShzmWIBqQftrcsjQNslM4Gp6utJewqGNwjPRcOirHjXPlTJ9Af323hA2ztMw=s858-no?authuser=0'
+                imageToReturn = 'https://lh3.googleusercontent.com/pw/AM-JKLUurvWjiGCWpQhYv4cDD06IhPnGH1CRH40XPosqvM82uTdMy71ZQ3N4o-TeepdxTrdO5pdLhiKYi9Cvex1nV_z27bIShzmWIBqQftrcsjQNslM4Gp6utJewqGNwjPRcOirHjXPlTJ9Af323hA2ztMw=s858-no?authuser=0'
                 break;
             case 'micro':
-                return 'https://lh3.googleusercontent.com/pw/AM-JKLXUhOLznWMpk6j0Zug5EIoeC8-oc5mqGMehDFdICweUlDnUHo5pvyXaG3K3eiqIux8SFsmboUJfhtHwL3E6dskHCMUzfJBsXYsnaz-8ueDzbjcM-S9XVsJN_RBxWQNGK_Kf10Spu1apjaRQLg6nFjk=s858-no?authuser=0'
+                imageToReturn = 'https://lh3.googleusercontent.com/pw/AM-JKLXUhOLznWMpk6j0Zug5EIoeC8-oc5mqGMehDFdICweUlDnUHo5pvyXaG3K3eiqIux8SFsmboUJfhtHwL3E6dskHCMUzfJBsXYsnaz-8ueDzbjcM-S9XVsJN_RBxWQNGK_Kf10Spu1apjaRQLg6nFjk=s858-no?authuser=0'
                 break;
             case 'planning':
-                return 'https://lh3.googleusercontent.com/pw/AM-JKLVoTepwmHATygHrSIWijq_aMy6yK1wEMXOpqMv0j8e_JhN2n-UTbkrPt-SvmjtlwTpqJmOr5ZJIrshSKSPNnn8Dop8fV5aWRmy1SnlXTVcWdWkp5Db2r_RJ6rnslavq_Jv-zQyaUEVwCDmRKfObs4k=s858-no?authuser=0'
+                imageToReturn = 'https://lh3.googleusercontent.com/pw/AM-JKLVoTepwmHATygHrSIWijq_aMy6yK1wEMXOpqMv0j8e_JhN2n-UTbkrPt-SvmjtlwTpqJmOr5ZJIrshSKSPNnn8Dop8fV5aWRmy1SnlXTVcWdWkp5Db2r_RJ6rnslavq_Jv-zQyaUEVwCDmRKfObs4k=s858-no?authuser=0'
                 break;
             case 'brewpub':
-                return 'https://lh3.googleusercontent.com/pw/AM-JKLWeerVA40JsOHeFi-6GB3XG0qK6LAENqd_HmOmpjisDXL8eHmtaN3LQFXTs45i4r9mD9mUNU2RMubzEyytcaGnBrahsvfL706nwl4Wm08ePFigoUAAcPhPzkrID02kvUU6Z_gHrA6uVnVdC374MakM=s858-no?authuser=0'
+                imageToReturn = 'https://lh3.googleusercontent.com/pw/AM-JKLWeerVA40JsOHeFi-6GB3XG0qK6LAENqd_HmOmpjisDXL8eHmtaN3LQFXTs45i4r9mD9mUNU2RMubzEyytcaGnBrahsvfL706nwl4Wm08ePFigoUAAcPhPzkrID02kvUU6Z_gHrA6uVnVdC374MakM=s858-no?authuser=0'
                 break;
             default: 
-                return 'https://lh3.googleusercontent.com/pw/AM-JKLWOfnbaH-tiA83auwm7QzXHmhLNTdv86g0k6OsYmbdtoZAhvJnXngldCZIBCo33WMT5zjaVxFw0ygqiVBzaoBWqiqvOsrnkVPzgL6yAqPs7xVhFlkqh018T2wRb7CjHjUG6q0JlNnMn4DdwoMEKR2E=s858-no?authuser=0'
+                imageToReturn = 'https://lh3.googleusercontent.com/pw/AM-JKLWOfnbaH-tiA83auwm7QzXHmhLNTdv86g0k6OsYmbdtoZAhvJnXngldCZIBCo33WMT5zjaVxFw0ygqiVBzaoBWqiqvOsrnkVPzgL6yAqPs7xVhFlkqh018T2wRb7CjHjUG6q0JlNnMn4DdwoMEKR2E=s858-no?authuser=0'
         }
+        return imageToReturn
     }
 
     return (
