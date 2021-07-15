@@ -52,10 +52,10 @@ const [submittedComment, setSubmittedComment ] = useState(favoritesComment)
                     {website_url ? <a href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒 </p>}
                 </div>
             </div>
-            <span className='comments' onClick={handleFavoriteComments}>&nbsp;&nbsp;{!showComments ?  <p><FaCommentAlt />&nbsp;&nbsp; View Comments <img class="ui avatar image" src='https://lh3.googleusercontent.com/pw/AM-JKLWOfnbaH-tiA83auwm7QzXHmhLNTdv86g0k6OsYmbdtoZAhvJnXngldCZIBCo33WMT5zjaVxFw0ygqiVBzaoBWqiqvOsrnkVPzgL6yAqPs7xVhFlkqh018T2wRb7CjHjUG6q0JlNnMn4DdwoMEKR2E=s858-no?authuser=0'></img></p> : 'Add Comment'}</span>
-            <div class='extra content'>
-            { !showComments ? null : <div class="ui message">
-                <ul class="list">
+            <span className='comments' onClick={handleFavoriteComments}>&nbsp;&nbsp;{!showComments ?  <p><FaCommentAlt />&nbsp;&nbsp; View Comments <img className="ui avatar image" src='https://lh3.googleusercontent.com/pw/AM-JKLWOfnbaH-tiA83auwm7QzXHmhLNTdv86g0k6OsYmbdtoZAhvJnXngldCZIBCo33WMT5zjaVxFw0ygqiVBzaoBWqiqvOsrnkVPzgL6yAqPs7xVhFlkqh018T2wRb7CjHjUG6q0JlNnMn4DdwoMEKR2E=s858-no?authuser=0'></img></p> : 'Add Comment'}</span>
+            <div className='extra content'>
+            { !showComments ? null : <div className="ui message">
+                <ul className="list">
                     <form onSubmit={handleSubmit}>
                         <input name='comment' onChange={handleInputChange} type='text'></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FaPlus onClick={handleSubmit}/>
                     </form>
