@@ -47,7 +47,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, fav
             <span id='filterByStars'>
             <label htmlFor="search">Filter By Rating</label>&nbsp;&nbsp;
             <select onChange={handleRating}>
-                <option value='' selected='select'>Show All</option>
+                <option value='' defaultValue='select'>Show All</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
                 <option value="3">3 Stars</option>
