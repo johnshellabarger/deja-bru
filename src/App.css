@@ -67,10 +67,6 @@
 	border-bottom: 125px solid transparent;
 }
 
-.filter-by-stars {
-	margin-top: 5px;
-}
-
 .ui.centered.cards.favorites {
 	margin-top: 0px;
 }
@@ -467,12 +463,6 @@ body {
 	margin-left: 10px;
 }
 
-
-#visitedSearch{
-	margin-top:400px;
-}
-
-#filterByStars{
-	display:inline-flex;
-	padding:2px;
+#visitedSearch {
+	margin-top: 28%;
 }
