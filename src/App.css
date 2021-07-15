@@ -54,8 +54,13 @@
 	padding-right: 10px;
 }
 
-.ui.huge.list {
-	margin-top: 27%;
+.ui.celled.collapsing.padded.striped.table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fav-indicated {
+	margin-top: 30%;
 }
 
 .ui.centered.cards.favorites {
