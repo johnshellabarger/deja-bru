@@ -19,7 +19,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites }) => {
                     <th>Comments</th>
                     <th>Website</th>
                 </tr></thead>
-                <tbody>
+                <tbody className='section'>
                 {visitedBreweries.map(brewery => {return (
                     <VisitedBreweriesCard 
                         name={brewery.name}
