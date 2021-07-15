@@ -26,7 +26,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                     visitedBreweries={visitedBreweries}
                 />
             <div className="searchbar" id='visitedSearch'>
-                <label htmlFor="search">Search Your Visited Breweries:</label>
+                <label htmlFor="search">Search Your Visited Breweries:</label>&nbsp;&nbsp;
                 <input
                     type="text"
                     id="search"
@@ -34,7 +34,8 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                     onChange={handleSearchText}
                 />
             </div>   
-            <h2 className='filter-by-stars favorites-header'>Filter By Stars</h2>
+            <span id='filterByStars'>
+            <label htmlFor="search">Filter By Rating</label>&nbsp;&nbsp;
             <select onChange={toggleGenre}>
                 <option value='' selected='select'>Show All</option>
                 <option value="1">1 Star</option>
@@ -42,7 +43,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                 <option value="3">3 Stars</option>
                 <option value="4">4 Stars</option>
                 <option value="5">5 Stars</option>
-            </select>
+            </select></span>
             <table className='ui celled collapsing padded striped table'>
                 <thead>
                     <tr><th>Add to Favorites</th>
