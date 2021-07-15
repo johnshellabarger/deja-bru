@@ -5,7 +5,7 @@ import VisitedBreweriesCard from './VisitedBreweriesCard'
 import GoogleMapVisited from './GoogleMapVisited'
 import Footer from './Footer'
 
-const VisitedBreweriesCollection = ({ visitedBreweries, favorites, setVisitedBreweries }) => {   
+const VisitedBreweriesCollection = ({ visitedBreweries, favorites, setVisitedBreweries, submittedRating, setSubmittedRating }) => {   
     const [selectedRating, setSelectedRating] = useState('')
     
     const toggleGenre = (e) => {
@@ -50,6 +50,8 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, setVisitedBre
                         visitedBreweries={visitedBreweries}
                         brewery={brewery}
                         rating={brewery.rating}
+                        submittedRating={submittedRating}
+                        setSubmittedRating={setSubmittedRating}
                     />
                 )} else if (parseInt(selectedRating) === brewery.rating) {
                     return (
@@ -64,6 +66,8 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, setVisitedBre
                             visitedBreweries={visitedBreweries}
                             brewery={brewery}
                             rating={brewery.rating}
+                            submittedRating={submittedRating}
+                            setSubmittedRating={setSubmittedRating}
                         />
                     )
                 }})}
