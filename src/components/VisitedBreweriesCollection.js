@@ -5,18 +5,30 @@ import VisitedBreweriesCard from './VisitedBreweriesCard'
 import GoogleMapVisited from './GoogleMapVisited'
 import Footer from './Footer'
 
-const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRating, setSubmittedRating, handleFavorites }) => {   
-    const [selectedRating, setSelectedRating] = useState('')
+const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, favorites, submittedRating, setSubmittedRating, handleFavorites }) => {   
     const [searchText, setSearchText] = useState('')
-    
-    const toggleGenre = (e) => {
-       setSelectedRating(e.target.value)
-    }
+    const [selectedRating, setSelectedRating] = useState('')
 
-
+    console.log(selectedRating)
 
     function handleSearchText(e) {
         setSearchText(e.target.value)
+    }
+
+    const handleRating = (e) => {
+        const selectedRatingValue = e.target.value
+        setSelectedRating(selectedRatingValue)
+       
+    }
+
+    const handleFilter = () => {
+        const filteredArray = visitedBreweries.filter(brewery => brewery.rating === parseInt(selectedRating))
+        const allVisitedBreweries = [...visitedBreweries]
+        if (selectedRating === '') {
+            return allVisitedBreweries
+        } else {
+            return filteredArray
+        }
     }
     
     return (
@@ -35,7 +47,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                 />
             </div>   
             <h2 className='filter-by-stars favorites-header'>Filter By Stars</h2>
-            <select onChange={toggleGenre}>
+            <select onChange={handleRating}>
                 <option value='' selected='select'>Show All</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
@@ -52,8 +64,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                     <th>Website</th>
                 </tr></thead>
                 <tbody className='section'>
-                {visitedBreweries.map(brewery => {
-                    if (selectedRating === '') {
+                {handleFilter().map(brewery => {
                     return (
                     <VisitedBreweriesCard 
                         key={brewery.id}
@@ -70,25 +81,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                         setSubmittedRating={setSubmittedRating}
                         handleFavorites={handleFavorites}
                     />
-                )} else if (parseInt(selectedRating) === brewery.rating) {
-                    return (
-                        <VisitedBreweriesCard 
-                            key={brewery.id}
-                            id={brewery.id}
-                            name={brewery.name}
-                            city={brewery.city}
-                            state={brewery.state}
-                            website_url={brewery.website_url}
-                            favorites={favorites}
-                            visitedBreweries={visitedBreweries}
-                            brewery={brewery}
-                            rating={brewery.rating}
-                            submittedRating={submittedRating}
-                            setSubmittedRating={setSubmittedRating}
-                            handleFavorites={handleFavorites}
-                        />
-                    )
-                }})}
+                )})}
                 </tbody>
             </table> 
             <Footer />   
