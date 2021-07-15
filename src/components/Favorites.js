@@ -96,6 +96,7 @@ const Favorites = ({ favorites, setFavorites }) => {
                         brewery_type={favorite.brewery_type}
                         setFavorites={setFavorites}
                         favorites={favorites}
+                        favoritesComment={favorite.comment}
                 />
                 )})}
             </div>

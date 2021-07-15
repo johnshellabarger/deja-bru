@@ -18,7 +18,8 @@
       "phone": "3036502337",
       "website_url": "http://www.bruzbeers.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "comment": "this dog sucks"
     },
     {
       "id": 9645,
@@ -38,7 +39,8 @@
       "phone": "3039277365",
       "website_url": "http://www.cerebralbrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "comment": "khkjhk"
     },
     {
       "id": 8245,
@@ -58,7 +60,8 @@
       "phone": "3039185446",
       "website_url": "http://www.aerocraft.beer",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "comment": "heyyy"
     },
     {
       "id": 10909,
@@ -580,7 +583,8 @@
       "phone": "6072174815",
       "website_url": "http://www.galaxybrewingco.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 15594,
