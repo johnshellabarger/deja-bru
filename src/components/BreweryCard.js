@@ -76,7 +76,7 @@ const BreweryCard = ({ id, name, city, state, website_url, brewery_type, handleF
                 <p onClick={handleVisit}>{!compareArrayWithBrewery(visitedBreweries) ? <span id='visitedBrewery'><FaMap/>&nbsp;Visit Brewery</span> : <span id='visited'><FaMap/>&nbsp;Visited</span> }</p>
             </div>
             
-                {website_url ? <a target='_blank' href={website_url}>Visit Brewery Website</a> : <a>No Website Available 😒</a>}
+                {website_url ? <a target='_blank' rel="noreferrer" href={website_url}>Visit Brewery Website</a> : <p>No Website Available 😒</p>}
                 <p className='brewery-type'>{brewery_type}</p>
             
             <div className='extra content'>
