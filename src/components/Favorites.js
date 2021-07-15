@@ -63,7 +63,7 @@ const Favorites = ({ favorites, setFavorites }) => {
         <div>
             <h1 className='favorites-header'>Favorite Breweries</h1>
             <div className="searchbar" id='search'>
-                <label htmlFor="search">Search Favorite Breweries:</label>
+                <label htmlFor="search">Search Your Favorite Breweries:</label>
                 <input
                     type="text"
                     id="search"
