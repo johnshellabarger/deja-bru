@@ -1,4 +1,4 @@
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React, { Component } from 'react' 
 
 
@@ -26,6 +26,7 @@ import React, { Component } from 'react'
             {breweryData.map(bar => {
               return(
                 <Marker 
+                  key={bar.id}
                   position={{
                     lat: bar.latitude,
                     lng: bar.longitude
