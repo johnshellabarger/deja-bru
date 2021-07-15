@@ -5,7 +5,7 @@ import VisitedBreweriesCard from './VisitedBreweriesCard'
 import GoogleMapVisited from './GoogleMapVisited'
 import Footer from './Footer'
 
-const VisitedBreweriesCollection = ({ visitedBreweries, favorites, setVisitedBreweries, submittedRating, setSubmittedRating }) => {   
+const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRating, setSubmittedRating }) => {   
     const [selectedRating, setSelectedRating] = useState('')
     
     const toggleGenre = (e) => {
