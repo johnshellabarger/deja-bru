@@ -30,7 +30,7 @@ const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, ratin
             <td data-label='Rating'>
                 <Rating icon='star' onRate={handleRatingChange} defaultRating={rating} maxRating={5} />
             </td>
-            <td data-label='Website'><a className='header' href={website_url} target='_blank'>{name}</a></td>
+            <td data-label='Website'><a className='header' href={website_url} target='_blank' rel="noreferrer">{name}</a></td>
         </tr>
     )
 }
