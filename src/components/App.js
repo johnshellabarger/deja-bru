@@ -18,6 +18,8 @@ function App() {
   const [submittedComment, setSubmittedComment ] = useState('')
   const [submittedRating, setSubmittedRating] = useState(0)
 
+
+  
   useEffect(() => {
     fetch('http://localhost:3000/favorites')
     .then(resp => resp.json())

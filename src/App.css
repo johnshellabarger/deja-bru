@@ -73,7 +73,7 @@
 } */
 
 .filter-by-stars {
-	margin-top: 30%;
+	margin-top: 5px;
 }
 
 .ui.centered.cards.favorites {
@@ -470,4 +470,9 @@ body {
 .ui.cards > .card .avatar img,
 .ui.cards > .card img.avatar {
 	margin-left: 10px;
+}
+
+
+#visitedSearch{
+	margin-top:300px;
 }

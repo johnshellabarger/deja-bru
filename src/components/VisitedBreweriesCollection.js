@@ -7,9 +7,16 @@ import Footer from './Footer'
 
 const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRating, setSubmittedRating, handleFavorites }) => {   
     const [selectedRating, setSelectedRating] = useState('')
+    const [searchText, setSearchText] = useState('')
     
     const toggleGenre = (e) => {
        setSelectedRating(e.target.value)
+    }
+
+
+
+    function handleSearchText(e) {
+        setSearchText(e.target.value)
     }
     
     return (
@@ -18,6 +25,15 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                 <GoogleMapVisited
                     visitedBreweries={visitedBreweries}
                 />
+            <div className="searchbar" id='visitedSearch'>
+                <label htmlFor="search">Search Your Visited Breweries:</label>
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Type a brewery to search..."
+                    onChange={handleSearchText}
+                />
+            </div>   
             <h2 className='filter-by-stars favorites-header'>Filter By Stars</h2>
             <select onChange={toggleGenre}>
                 <option value='' selected='select'>Show All</option>
