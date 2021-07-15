@@ -62,12 +62,12 @@ const Favorites = ({ favorites, setFavorites }) => {
     return (
         <div>
             <h1 className='favorites-header'>Favorite Breweries</h1>
-            <div className="searchbar">
+            <div className="searchbar" id='search'>
                 <label htmlFor="search">Search Favorite Breweries:</label>
                 <input
                     type="text"
                     id="search"
-                    placeholder="Type a name to search..."
+                    placeholder="Type a brewery to search..."
                     onChange={handleSearchText}
                 />
             </div>

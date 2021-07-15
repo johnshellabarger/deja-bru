@@ -437,3 +437,12 @@ body {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+
+#search{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
