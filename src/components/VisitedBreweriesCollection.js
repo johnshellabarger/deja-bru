@@ -27,7 +27,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, setVisitedBre
                 <option value="4">4 Stars</option>
                 <option value="5">5 Stars</option>
             </select>
-            <h4 id='fav-indicated'><FaBeer/>indicates favorite</h4>
+            <h4 id='fav-indicated'><FaBeer/>&nbsp;&nbsp;indicates favorite</h4>
             <table className='ui celled collapsing padded striped table'>
                 <thead>
                     <tr><th>Name</th>
