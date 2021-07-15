@@ -25,7 +25,7 @@ const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, ratin
     
     return (
         <tr>
-            <td data-label='Name'>{name}&nbsp;{compareArrayWithBrewery(favorites) ? <FaBeer/> : null}</td>
+            <td data-label='Name'>{name}&nbsp;&nbsp;{compareArrayWithBrewery(favorites) ? <FaBeer/> : null}</td>
             <td data-label='Location'>{city}, {state}</td>
             <td data-label='Rating'>
                 <Rating icon='star' onRate={handleRatingChange} defaultRating={rating} maxRating={5} />
