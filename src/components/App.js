@@ -16,6 +16,7 @@ function App() {
   const [favorites, setFavorites] = useState([])
   const [visitedBreweries, setVisitedBreweries] = useState([])
   const [submittedComment, setSubmittedComment ] = useState('')
+  const [submittedRating, setSubmittedRating] = useState(0)
 
   useEffect(() => {
     fetch('http://localhost:3000/favorites')
@@ -27,7 +28,7 @@ function App() {
     fetch('http://localhost:3000/visited')
     .then(resp => resp.json())
     .then(data => setVisitedBreweries(data))
-  }, [])
+  }, [submittedRating])
 
   function handleFavorites(id){
     const favoritedBrewery = breweries.find(brewery => brewery.id === id)
@@ -102,6 +103,8 @@ function App() {
             visitedBreweries={visitedBreweries}
             favorites={favorites}
             setVisitedBreweries={setVisitedBreweries}
+            submittedRating={submittedRating}
+            setSubmittedRating={setSubmittedRating}
           />
         </Route>
         <Route exact path='/favorites'>

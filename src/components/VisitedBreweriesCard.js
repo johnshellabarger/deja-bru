@@ -2,17 +2,19 @@ import React from 'react'
 import { FaBeer } from "react-icons/fa"
 import { Rating } from 'semantic-ui-react'
 
-const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, rating, id }) => {
+const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, rating, id, setSubmittedRating }) => {
     function handleRatingChange(e){
+        const clickedRating = parseInt(e.target.getAttribute('aria-posinset'))
         fetch(`http://localhost:3000/visited/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                rating: parseInt(e.target.getAttribute('aria-posinset'))
+                rating: clickedRating
             })
         })
+        setSubmittedRating(clickedRating)
      }
 
     function compareArrayWithBrewery(array){
