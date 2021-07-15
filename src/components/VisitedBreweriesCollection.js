@@ -64,6 +64,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, fav
                 </tr></thead>
                 <tbody className='section'>
                 {handleFilter().map(brewery => {
+                if (brewery.name.toLowerCase().includes(searchText.toLowerCase()))
                     return (
                     <VisitedBreweriesCard 
                         key={brewery.id}
