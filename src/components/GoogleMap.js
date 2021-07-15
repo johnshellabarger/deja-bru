@@ -26,6 +26,7 @@ import React, { Component } from 'react'
             {breweryData.map(bar => {
               return(
                 <Marker 
+                  key={bar.id}
                   position={{
                     lat: bar.latitude,
                     lng: bar.longitude
