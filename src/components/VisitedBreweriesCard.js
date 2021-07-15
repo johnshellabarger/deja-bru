@@ -1,13 +1,9 @@
 import React from 'react'
-import { useState } from 'react';
 import { FaBeer } from "react-icons/fa"
 import { Rating } from 'semantic-ui-react'
 
-const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, visitedBreweries, rating, id }) => {
-    const [visitedRating, setVisitedRating] = useState(0)
-
+const VisitedBreweriesCard = ({ name, city, state, website_url, favorites, rating, id }) => {
     function handleRatingChange(e){
-        setVisitedRating(parseInt(e.target.getAttribute('aria-posinset')))
         fetch(`http://localhost:3000/visited/${id}`, {
             method: 'PATCH',
             headers: {
