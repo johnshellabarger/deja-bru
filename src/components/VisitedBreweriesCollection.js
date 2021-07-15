@@ -5,7 +5,7 @@ import VisitedBreweriesCard from './VisitedBreweriesCard'
 import GoogleMapVisited from './GoogleMapVisited'
 import Footer from './Footer'
 
-const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRating, setSubmittedRating }) => {   
+const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRating, setSubmittedRating, handleFavorites }) => {   
     const [selectedRating, setSelectedRating] = useState('')
     
     const toggleGenre = (e) => {
@@ -27,10 +27,10 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                 <option value="4">4 Stars</option>
                 <option value="5">5 Stars</option>
             </select>
-            <h4 id='fav-indicated'><FaBeer/>&nbsp;&nbsp;indicates favorite</h4>
             <table className='ui celled collapsing padded striped table'>
                 <thead>
-                    <tr><th>Name</th>
+                    <tr><th>Add to Favorites</th>
+                    <th>Name</th>
                     <th>Location</th>
                     <th>Rating</th>
                     <th>Website</th>
@@ -52,6 +52,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                         rating={brewery.rating}
                         submittedRating={submittedRating}
                         setSubmittedRating={setSubmittedRating}
+                        handleFavorites={handleFavorites}
                     />
                 )} else if (parseInt(selectedRating) === brewery.rating) {
                     return (
@@ -68,6 +69,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                             rating={brewery.rating}
                             submittedRating={submittedRating}
                             setSubmittedRating={setSubmittedRating}
+                            handleFavorites={handleFavorites}
                         />
                     )
                 }})}

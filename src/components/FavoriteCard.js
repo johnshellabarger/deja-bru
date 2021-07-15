@@ -60,8 +60,8 @@ const [editComment, setEditComment] = useState(false)
             </div>
 
             <span className='comments' onClick={handleFavoriteComments}>&nbsp;&nbsp;{!showComments ?  <p><FaCommentAlt />&nbsp; View Comments <img class="ui avatar image" src='https://lh3.googleusercontent.com/pw/AM-JKLWOfnbaH-tiA83auwm7QzXHmhLNTdv86g0k6OsYmbdtoZAhvJnXngldCZIBCo33WMT5zjaVxFw0ygqiVBzaoBWqiqvOsrnkVPzgL6yAqPs7xVhFlkqh018T2wRb7CjHjUG6q0JlNnMn4DdwoMEKR2E=s858-no?authuser=0' alt=''></img></p> : <p><FaCommentAlt />&nbsp;Exit Comments</p>}</span>
-            <div class='extra content'>
-            { !showComments ? null : <div class="ui message">
+            <br/>
+            { !showComments ? null : <div class='extra content'><div class="ui message">
                 <p>{comment}&nbsp;&nbsp;<FaEdit onClick={toggleEdit}/></p>
             { !editComment ? null :                 <ul class="list">
 
@@ -69,9 +69,8 @@ const [editComment, setEditComment] = useState(false)
                         <input name='comment' onChange={handleInputChange} type='text'></input>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FaPlus onClick={handleSubmit}/>
                     </form>
                 </ul> }
-
-            </div>}
             </div>
+            </div>}
             <div onClick={handleDelete} className='ui button attached button' id='delete-btn'>{<FaTrash />}&nbsp;&nbsp;Remove From Favorites</div>
         </div>
     )
