@@ -105,9 +105,30 @@
       "updated_at": "2018-08-24T00:00:00.000Z",
       "created_at": "2018-07-24T00:00:00.000Z",
       "rating": 4
-    },
+    }
   ],
   "visited": [
+    {
+      "id": 10611,
+      "obdb_id": "fiction-beer-company-denver",
+      "name": "Fiction Beer Company",
+      "brewery_type": "micro",
+      "street": "7101 E Colfax Ave",
+      "address_2": null,
+      "address_3": null,
+      "city": "Denver",
+      "state": "Colorado",
+      "county_province": null,
+      "postal_code": "80220-1805",
+      "country": "United States",
+      "longitude": "-104.8854207",
+      "latitude": "39.7402188",
+      "phone": "7204567163",
+      "website_url": "http://www.fictionbeer.com",
+      "updated_at": "2018-08-24T00:00:00.000Z",
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
+    },
     {
       "id": 10128,
       "obdb_id": "denver-beer-co-denver",
@@ -214,44 +235,25 @@
       "rating": 4
     },
     {
-      "id": 8245,
-      "obdb_id": "aero-craft-brewing-denver",
-      "name": "Aero Craft Brewing",
-      "brewery_type": "planning",
-      "street": null,
+      "id": 9645,
+      "obdb_id": "cerebral-brewing-denver",
+      "name": "Cerebral Brewing",
+      "brewery_type": "micro",
+      "street": "1477 Monroe St",
       "address_2": null,
       "address_3": null,
       "city": "Denver",
       "state": "Colorado",
       "county_province": null,
-      "postal_code": "80212-2199",
+      "postal_code": "80206-2708",
       "country": "United States",
-      "longitude": "-104.984696",
-      "latitude": "39.7391428",
-      "phone": "3039185446",
-      "website_url": "http://www.aerocraft.beer",
+      "longitude": "-104.9451783",
+      "latitude": "39.73968253",
+      "phone": "3039277365",
+      "website_url": "http://www.cerebralbrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
-    },
-    {
-      "id": 11027,
-      "obdb_id": "good-river-beer-company-denver",
-      "name": "Good River Beer Company",
-      "brewery_type": "contract",
-      "street": "1790 S Bannock St.",
-      "address_2": null,
-      "address_3": null,
-      "city": "Denver",
-      "state": "Colorado",
-      "county_province": null,
-      "postal_code": "80223",
-      "country": "United States",
-      "longitude": "-104.9898169",
-      "latitude": "39.68421218",
-      "phone": "6023697442",
-      "website_url": "http://www.grbeerco.com",
-      "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 1
     }
   ]
 }

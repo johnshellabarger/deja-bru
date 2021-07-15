@@ -9,13 +9,6 @@ const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, fav
     const [searchText, setSearchText] = useState('')
     const [selectedRating, setSelectedRating] = useState('')
 
-    console.log(selectedRating)
-
-    
-    const toggleGenre = (e) => {
-       setSelectedRating(e.target.value)
-    }
-
     function handleSearchText(e) {
         setSearchText(e.target.value)
     }
@@ -51,14 +44,9 @@ const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, fav
                     onChange={handleSearchText}
                 />
             </div>   
-
-            <h2 className='filter-by-stars favorites-header'>Filter By Stars</h2>
-            <select onChange={handleRating}>
-
             <span id='filterByStars'>
             <label htmlFor="search">Filter By Rating</label>&nbsp;&nbsp;
-            <select onChange={toggleGenre}>
-
+            <select onChange={handleRating}>
                 <option value='' selected='select'>Show All</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
