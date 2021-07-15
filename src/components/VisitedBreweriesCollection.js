@@ -13,8 +13,6 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
        setSelectedRating(e.target.value)
     }
 
-
-
     function handleSearchText(e) {
         setSearchText(e.target.value)
     }
@@ -71,7 +69,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites, submittedRati
                         setSubmittedRating={setSubmittedRating}
                         handleFavorites={handleFavorites}
                     />
-                )} else if (parseInt(selectedRating) === brewery.rating) {
+                )} else if (parseInt(selectedRating) === brewery.rating ) {
                     return (
                         <VisitedBreweriesCard 
                             key={brewery.id}
