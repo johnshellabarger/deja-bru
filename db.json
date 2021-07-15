@@ -22,27 +22,6 @@
       "comment": "this dog sucks"
     },
     {
-      "id": 9645,
-      "obdb_id": "cerebral-brewing-denver",
-      "name": "Cerebral Brewing",
-      "brewery_type": "micro",
-      "street": "1477 Monroe St",
-      "address_2": null,
-      "address_3": null,
-      "city": "Denver",
-      "state": "Colorado",
-      "county_province": null,
-      "postal_code": "80206-2708",
-      "country": "United States",
-      "longitude": "-104.9451783",
-      "latitude": "39.73968253",
-      "phone": "3039277365",
-      "website_url": "http://www.cerebralbrewing.com",
-      "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z",
-      "comment": "khkjhk"
-    },
-    {
       "id": 8245,
       "obdb_id": "aero-craft-brewing-denver",
       "name": "Aero Craft Brewing",
@@ -604,7 +583,8 @@
       "phone": "6072174546",
       "website_url": "http://www.waterstreetbrewingco.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 1
     },
     {
       "id": 14046,
@@ -624,7 +604,8 @@
       "phone": "7075452337",
       "website_url": "http://www.russianriverbrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 15069,
@@ -644,7 +625,8 @@
       "phone": "7075233060",
       "website_url": "http://www.thirdstreetaleworks.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 10611,
@@ -664,7 +646,8 @@
       "phone": "7204567163",
       "website_url": "http://www.fictionbeer.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 3
     },
     {
       "id": 8316,
@@ -684,7 +667,8 @@
       "phone": "9143566809",
       "website_url": "http://www.acbnyc.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 8998,
@@ -704,7 +688,8 @@
       "phone": "7203342873",
       "website_url": "http://www.blackprojectbeer.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 9550,
@@ -724,7 +709,8 @@
       "phone": "4066562528",
       "website_url": "http://www.canyoncreekbrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 8369,
@@ -744,7 +730,8 @@
       "phone": "4062523370",
       "website_url": null,
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 1
     },
     {
       "id": 8709,
@@ -764,7 +751,8 @@
       "phone": "18134763767",
       "website_url": null,
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 3
     },
     {
       "id": 8941,
@@ -784,7 +772,8 @@
       "phone": null,
       "website_url": null,
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 9101,
@@ -804,7 +793,8 @@
       "phone": "3052495628",
       "website_url": "http://www.bobloblawbrewing.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 8213,
@@ -824,7 +814,8 @@
       "phone": "3055388110",
       "website_url": null,
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 9278,
@@ -844,7 +835,8 @@
       "phone": "4154701370",
       "website_url": "http://brewerybhavana.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 8859,
@@ -864,7 +856,8 @@
       "phone": "9198340045",
       "website_url": "http://www.bigbossbrewing.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 9192,
@@ -884,7 +877,8 @@
       "phone": "9198038927",
       "website_url": "http://www.boylanbridge.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 8385,
@@ -904,7 +898,8 @@
       "phone": "9704904500",
       "website_url": null,
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 8964,
@@ -924,7 +919,8 @@
       "phone": "9704932337",
       "website_url": "http://www.blackbottlebrewery.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 1
     },
     {
       "id": 8039,
@@ -944,7 +940,8 @@
       "phone": "7205738992",
       "website_url": null,
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 8103,
@@ -964,7 +961,8 @@
       "phone": null,
       "website_url": null,
       "updated_at": "2018-07-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 8204,
@@ -984,7 +982,8 @@
       "phone": "7133970072",
       "website_url": "http://www.8thwonderbrew.com",
       "updated_at": "2018-07-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 3
     },
     {
       "id": 8319,
@@ -1004,7 +1003,8 @@
       "phone": "3038321245",
       "website_url": "http://www.alpinedogbrewery.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 10459,
@@ -1024,7 +1024,8 @@
       "phone": "9178040571",
       "website_url": "http://www.hitemhard.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 11334,
@@ -1044,7 +1045,8 @@
       "phone": null,
       "website_url": "http://www.harlemblue.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 14028,
@@ -1064,7 +1066,8 @@
       "phone": "6467105098",
       "website_url": "http://www.ruckusbrewing.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 3
     },
     {
       "id": 11369,
@@ -1084,7 +1087,8 @@
       "phone": "2126453400",
       "website_url": "http://www.heartlandbrewery.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 13647,
@@ -1104,7 +1108,8 @@
       "phone": null,
       "website_url": null,
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 15003,
@@ -1124,7 +1129,8 @@
       "phone": "2125640218",
       "website_url": "http://www.theowlsbrew.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 15066,
@@ -1144,7 +1150,8 @@
       "phone": null,
       "website_url": "http://www.thirdrailbeer.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 13560,
@@ -1184,7 +1191,8 @@
       "phone": "8153327070",
       "website_url": null,
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 9572,
@@ -1204,7 +1212,8 @@
       "phone": "8159632739",
       "website_url": "http://www.carlylebrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 3
     },
     {
       "id": 13449,
@@ -1245,7 +1254,8 @@
       "phone": null,
       "website_url": "http://www.sackbutbrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 14234,
@@ -1265,7 +1275,8 @@
       "phone": "5592645521",
       "website_url": "http://www.sequoiabrewing.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 3
     },
     {
       "id": 12410,
@@ -1285,7 +1296,8 @@
       "phone": "5593253825",
       "website_url": "http://www.madduckcraft.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     },
     {
       "id": 10878,
@@ -1305,7 +1317,8 @@
       "phone": "5592646323",
       "website_url": "http://www.fullcirclebrewing.com",
       "updated_at": "2018-08-23T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 3
     },
     {
       "id": 15535,
@@ -1325,7 +1338,8 @@
       "phone": "2083299608",
       "website_url": "http://www.vonscheidtbrewing.com",
       "updated_at": "2020-10-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 13890,
@@ -1345,7 +1359,8 @@
       "phone": "3077390700",
       "website_url": "http://www.roadhousebrewery.com",
       "updated_at": "2018-08-11T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 5
     },
     {
       "id": 13889,
@@ -1365,7 +1380,8 @@
       "phone": "3072641900",
       "website_url": "http://www.roadhousebrewery.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 1
     },
     {
       "id": 14412,

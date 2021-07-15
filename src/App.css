@@ -459,3 +459,7 @@ body {
 	border-right: none;
 	border-left: none;
 }
+
+.ui.card .avatar img, .ui.card img.avatar, .ui.cards>.card .avatar img, .ui.cards>.card img.avatar{
+	margin-left:10px;
+}
