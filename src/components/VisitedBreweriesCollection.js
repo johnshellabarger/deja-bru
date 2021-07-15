@@ -4,7 +4,7 @@ import VisitedBreweriesCard from './VisitedBreweriesCard'
 import GoogleMapVisited from './GoogleMapVisited'
 import Footer from './Footer'
 
-const VisitedBreweriesCollection = ({ visitedBreweries, favorites }) => {
+const VisitedBreweriesCollection = ({ visitedBreweries, favorites }) => {   
     return (
         <div>
             <h1 className='favorites-header'>Visited Breweries</h1>
@@ -16,17 +16,22 @@ const VisitedBreweriesCollection = ({ visitedBreweries, favorites }) => {
                 <thead>
                     <tr><th>Name</th>
                     <th>Location</th>
-                    <th>Comments</th>
+                    <th>Rating</th>
                     <th>Website</th>
                 </tr></thead>
                 <tbody className='section'>
                 {visitedBreweries.map(brewery => {return (
                     <VisitedBreweriesCard 
+                        key={brewery.id}
+                        id={brewery.id}
                         name={brewery.name}
                         city={brewery.city}
                         state={brewery.state}
                         website_url={brewery.website_url}
                         favorites={favorites}
+                        visitedBreweries={visitedBreweries}
+                        brewery={brewery}
+                        rating={brewery.rating}
                     />
                 )})}
                 </tbody>
