@@ -23,6 +23,7 @@ import React, { Component } from 'react'
                     lat: 38.854885,
                     lng: -98.081807
                   }}
+                  
                 >
 
             {visitedBreweryData.map(bar => {
