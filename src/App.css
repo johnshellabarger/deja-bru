@@ -36,12 +36,16 @@
 }
 
 .map-container:first-child {
+	display: block;
 	position: absolute;
-	width: 100vw;
-	height: 50vw;
+	width: 100%;
+	height: 23%;
 	margin-left: 25%;
 	margin-right: 25%;
-	margin-bottom: 2%;
+}
+
+#root > div > div:nth-child(2) > div:nth-child(2) > div.map-container > div > div {
+	height: 100%;
 }
 
 .ui.action.input {
@@ -50,12 +54,19 @@
 
 .ui.centered.cards {
 	margin-top: 27%;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 80px;
+	padding-right: 80px;
+	margin-bottom: 20%;
+	padding-bottom: 100px;
 }
 
-.ui.huge.list {
-	margin-top: 27%;
+.ui.celled.collapsing.padded.striped.table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fav-indicated {
+	margin-top: 30%;
 }
 
 .ui.centered.cards.favorites {

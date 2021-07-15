@@ -99,6 +99,7 @@ function App() {
         <Route exact path='/visited'>
           <VisitedBreweriesCollection 
             visitedBreweries={visitedBreweries}
+            favorites={favorites}
           />
         </Route>
         <Route exact path='/favorites'>

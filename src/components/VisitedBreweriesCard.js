@@ -1,15 +1,22 @@
 import React from 'react'
+import { FaBeer } from "react-icons/fa"
 
-const VisitedBreweriesCard = ({ name, city, state, website_url }) => {
+const VisitedBreweriesCard = ({ name, city, state, website_url, favorites }) => {
+    function compareArrayWithBrewery(array){
+        for (const item of array) {
+            if (item.name === name) {
+                return true
+            } 
+        }
+    }
+    
     return (
-        <div className='item'>
-            <div className='content'>
-                <div>
-                    <a className='header' href={website_url} target='_blank'>{name}</a>
-                </div>
-                <div class="description">{city}, {state}</div> 
-            </div>
-        </div>
+        <tr>
+            <td data-label='Name'>{name}&nbsp;{compareArrayWithBrewery(favorites) ? <FaBeer/> : null}</td>
+            <td data-label='Location'>{city}, {state}</td>
+            <td data-label='Comments'>comments here</td>
+            <td data-label='Website'><a className='header' href={website_url} target='_blank'>{name}</a></td>
+        </tr>
     )
 }
 
