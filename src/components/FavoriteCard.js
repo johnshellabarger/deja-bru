@@ -5,11 +5,10 @@ import {FaPlus} from "react-icons/fa"
 import {FaEdit} from "react-icons/fa"
 import { useState } from 'react'
 
-const FavoriteCard = ({ id, brewery_type, name, city, state, website_url, favorites, setFavorites, favoritesComment}) => {
+const FavoriteCard = ({ id, brewery_type, name, city, state, website_url, favorites, setFavorites, comment, submittedComment, setSubmittedComment}) => {
 
 const [showComments, setShowComments] = useState(false)
 const [comments, setComments] = useState('')
-const [submittedComment, setSubmittedComment ] = useState(favoritesComment)
 const [editComment, setEditComment] = useState(false)
 
 
@@ -63,7 +62,7 @@ const [editComment, setEditComment] = useState(false)
             <span className='comments' onClick={handleFavoriteComments}>&nbsp;&nbsp;{!showComments ?  <p><FaCommentAlt />&nbsp; View Comments <img class="ui avatar image" src='https://lh3.googleusercontent.com/pw/AM-JKLWOfnbaH-tiA83auwm7QzXHmhLNTdv86g0k6OsYmbdtoZAhvJnXngldCZIBCo33WMT5zjaVxFw0ygqiVBzaoBWqiqvOsrnkVPzgL6yAqPs7xVhFlkqh018T2wRb7CjHjUG6q0JlNnMn4DdwoMEKR2E=s858-no?authuser=0' alt=''></img></p> : <p><FaCommentAlt />&nbsp;Exit Comments</p>}</span>
             <div class='extra content'>
             { !showComments ? null : <div class="ui message">
-                <p>{submittedComment}&nbsp;&nbsp;<FaEdit onClick={toggleEdit}/></p>
+                <p>{comment}&nbsp;&nbsp;<FaEdit onClick={toggleEdit}/></p>
             { !editComment ? null :                 <ul class="list">
 
                     <form onSubmit={handleSubmit}>
