@@ -7,6 +7,13 @@ import Footer from './Footer'
 const Favorites = ({ favorites, setFavorites }) => {  
     const [sortByState, setSortByState] = useState(false)
     const [sortByName, setSortByName] = useState(false)
+    const [searchText, setSearchText] = useState('')
+
+
+    function handleSearchText(e) {
+        setSearchText(e.target.value)
+    }
+    
 
     const sortedFavoritesByAlphabet = [...favorites].sort(function(a,b) {
         let nameA = a.name.toUpperCase()
@@ -55,6 +62,15 @@ const Favorites = ({ favorites, setFavorites }) => {
     return (
         <div>
             <h1 className='favorites-header'>Favorite Breweries</h1>
+            <div className="searchbar">
+                <label htmlFor="search">Search Favorite Breweries:</label>
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Type a name to search..."
+                    onChange={handleSearchText}
+                />
+            </div>
             <div className='sorting-btns'>
                 <div id='sort-btn' className='ui toggle checkbox'>
                     <input onChange={handleSortByState} type='checkbox' checked={sortByState} tabindex='0' name='sort'></input>
@@ -67,17 +83,19 @@ const Favorites = ({ favorites, setFavorites }) => {
             </div>
             <br></br>
             <div className='ui link cards centered favorites'>
-                {favorites.map(favorite => {return (
-                    <FavoriteCard 
-                    key = {favorite.id}
-                    id = {favorite.id}
-                    name = {favorite.name}
-                    city = {favorite.city}
-                    state = {favorite.state}
-                    website_url = {favorite.website_url}
-                    brewery_type={favorite.brewery_type}
-                    setFavorites={setFavorites}
-                    favorites={favorites}
+                {favorites.map(favorite => { 
+                    if (favorite.name.toLowerCase().includes(searchText.toLowerCase()))
+                    return (
+                        <FavoriteCard 
+                        key = {favorite.id}
+                        id = {favorite.id}
+                        name = {favorite.name}
+                        city = {favorite.city}
+                        state = {favorite.state}
+                        website_url = {favorite.website_url}
+                        brewery_type={favorite.brewery_type}
+                        setFavorites={setFavorites}
+                        favorites={favorites}
                 />
                 )})}
             </div>
