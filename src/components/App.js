@@ -100,6 +100,7 @@ function App() {
           <VisitedBreweriesCollection 
             visitedBreweries={visitedBreweries}
             favorites={favorites}
+            setVisitedBreweries={setVisitedBreweries}
           />
         </Route>
         <Route exact path='/favorites'>
