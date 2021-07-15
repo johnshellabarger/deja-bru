@@ -469,5 +469,10 @@ body {
 
 
 #visitedSearch{
-	margin-top:300px;
+	margin-top:400px;
+}
+
+#filterByStars{
+	display:inline-flex;
+	padding:2px;
 }

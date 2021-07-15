@@ -1,7 +1,6 @@
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React, { Component } from 'react' 
 
-
   const containerStyle = {
     position: 'relative',  
     width: '50vw',
@@ -11,6 +10,7 @@ import React, { Component } from 'react'
   export class MapContainer extends Component {
     render() {
       const breweryData = this.props.breweries
+      const handleMarkers = this.props.handleMarkers
     return (
     <div className='map-container'> 
           <Map 
@@ -22,7 +22,7 @@ import React, { Component } from 'react'
               lng: -98.081807
             }}
             >
-              
+ 
             {breweryData.map(bar => {
               return(
                 <Marker 
@@ -31,6 +31,7 @@ import React, { Component } from 'react'
                     lat: bar.latitude,
                     lng: bar.longitude
                   }}
+                  onClick={() => handleMarkers(bar.name)}
                 />
               )
             })}

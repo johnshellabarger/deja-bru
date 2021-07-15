@@ -11,6 +11,11 @@ const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, fav
 
     console.log(selectedRating)
 
+    
+    const toggleGenre = (e) => {
+       setSelectedRating(e.target.value)
+    }
+
     function handleSearchText(e) {
         setSearchText(e.target.value)
     }
@@ -38,7 +43,7 @@ const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, fav
                     visitedBreweries={visitedBreweries}
                 />
             <div className="searchbar" id='visitedSearch'>
-                <label htmlFor="search">Search Your Visited Breweries:</label>
+                <label htmlFor="search">Search Your Visited Breweries:</label>&nbsp;&nbsp;
                 <input
                     type="text"
                     id="search"
@@ -46,15 +51,21 @@ const VisitedBreweriesCollection = ({ visitedBreweries, setVisitedBreweries, fav
                     onChange={handleSearchText}
                 />
             </div>   
+
             <h2 className='filter-by-stars favorites-header'>Filter By Stars</h2>
             <select onChange={handleRating}>
+
+            <span id='filterByStars'>
+            <label htmlFor="search">Filter By Rating</label>&nbsp;&nbsp;
+            <select onChange={toggleGenre}>
+
                 <option value='' selected='select'>Show All</option>
                 <option value="1">1 Star</option>
                 <option value="2">2 Stars</option>
                 <option value="3">3 Stars</option>
                 <option value="4">4 Stars</option>
                 <option value="5">5 Stars</option>
-            </select>
+            </select></span>
             <table className='ui celled collapsing padded striped table'>
                 <thead>
                     <tr><th>Add to Favorites</th>

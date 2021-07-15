@@ -1,10 +1,12 @@
 import React from 'react'
 import BreweryCard from './BreweryCard'
 
-const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorites, visitedBreweries }) => {        
+const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorites, visitedBreweries, clickedMarker }) => {        
     return (
         <div className='ui six cards centered'>
-            {breweries.map(brewery => { return (
+            {breweries.map(brewery => { 
+             if(brewery.name === clickedMarker)
+                return (
                 <BreweryCard 
                     brewery={brewery}
                     key = {brewery.id}
