@@ -6,7 +6,7 @@ import React, { Component } from 'react'
   const containerStyle = {
     position: 'relative',  
     width: '50%',
-    height: '50%'
+    height: '100%'
   }
   
   export class MapContainer extends Component {
