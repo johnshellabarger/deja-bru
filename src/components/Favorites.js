@@ -4,7 +4,7 @@ import FavoriteCard from './FavoriteCard'
 import Footer from './Footer'
 
 
-const Favorites = ({ favorites, setFavorites }) => {  
+const Favorites = ({ favorites, setFavorites, submittedComment, setSubmittedComment }) => {  
     const [sortByState, setSortByState] = useState(false)
     const [sortByName, setSortByName] = useState(false)
     const [searchText, setSearchText] = useState('')
@@ -96,7 +96,9 @@ const Favorites = ({ favorites, setFavorites }) => {
                         brewery_type={favorite.brewery_type}
                         setFavorites={setFavorites}
                         favorites={favorites}
-                        favoritesComment={favorite.comment}
+                        comment={favorite.comment}
+                        submittedComment={submittedComment}
+                        setSubmittedComment={setSubmittedComment}
                 />
                 )})}
             </div>

@@ -15,12 +15,13 @@ function App() {
   })
   const [favorites, setFavorites] = useState([])
   const [visitedBreweries, setVisitedBreweries] = useState([])
+  const [submittedComment, setSubmittedComment ] = useState('')
 
   useEffect(() => {
     fetch('http://localhost:3000/favorites')
     .then(resp => resp.json())
     .then(data => setFavorites(data))
-  }, [])
+  }, [submittedComment])
 
   useEffect(() => {
     fetch('http://localhost:3000/visited')
@@ -107,6 +108,8 @@ function App() {
           <Favorites 
             favorites={favorites}
             setFavorites={setFavorites}
+            submittedComment={submittedComment}
+            setSubmittedComment={setSubmittedComment}
           />
         </Route>
       </Switch>
