@@ -41,7 +41,7 @@ import React, { Component } from 'react'
                       lat: bar.latitude,
                       lng: bar.longitude
                     }}
-                    onClick={() => props.handleMarkers(bar.name)}
+                    onClick={() => props.handleMarkers(bar)}
                   />
                   )
                   })
