@@ -1,5 +1,6 @@
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React, { Component } from 'react' 
+import { FaBeer } from "react-icons/fa"
 
   const containerStyle = {
     position: 'relative',  
@@ -30,18 +31,26 @@ import React, { Component } from 'react'
                 lat: 38.854885,
                 lng: -98.081807
               }}
+              icon={"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
               bounds={bounds}
               >
               {setMarkers()}
               {props.breweries.map(bar => {
                 return(
                   <Marker 
+                    title={bar.name}
+                    name={bar.name}
                     key={bar.id}
                     position={{
                       lat: bar.latitude,
                       lng: bar.longitude
                     }}
                     onClick={() => props.handleMarkers(bar)}
+                    icon={{
+                      url: "https://freepngimg.com/thumb/beer/1-beer-png-image.png",
+                      anchor: new props.google.maps.Point(32,32),
+                      scaledSize: new props.google.maps.Size(20,40)
+                    }}
                   />
                   )
                   })
