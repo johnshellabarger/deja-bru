@@ -7,8 +7,7 @@ import React, { Component } from 'react'
     height: '25vw'
   }
   
- const MapContainer = (props) => {
-    console.log(props.points)  
+ const MapContainer = (props) => {  
     const bounds = new props.google.maps.LatLngBounds();    
 
       function setMarkers() {
@@ -19,7 +18,6 @@ import React, { Component } from 'react'
             bounds.extend(props.points[i]); 
           }
         }
-        console.log(bounds)
         }
 
     return (
