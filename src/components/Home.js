@@ -5,10 +5,9 @@ import GoogleMap from './GoogleMap'
 import Footer from './Footer'
 import { useState } from 'react'
 
-const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorites, handleVisited, visitedBreweries }) => {
-
+const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorites, handleVisited, visitedBreweries, points }) => {
     const [clickedMarker, setClickedMarker] = useState('')
-
+   
     function handleMarkers(name){
         setClickedMarker(name)
     }
@@ -24,6 +23,7 @@ const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorite
             <GoogleMap
                 breweries={breweries}
                 handleMarkers={handleMarkers}
+                points={points}
                 />
             <BreweryCollection
                 clickedMarker={clickedMarker}

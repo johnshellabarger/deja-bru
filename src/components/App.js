@@ -17,6 +17,7 @@ function App() {
   const [visitedBreweries, setVisitedBreweries] = useState([])
   const [submittedComment, setSubmittedComment ] = useState('')
   const [submittedRating, setSubmittedRating] = useState(0)
+  const [points, setPoints] = useState({})
     
   useEffect(() => {
     fetch('http://localhost:3000/favorites')
@@ -78,7 +79,14 @@ function App() {
   function handleSubmit(e){
     fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData.city}&by_state=${formData.state.toLowerCase()}`)
     .then(resp => resp.json())
-    .then(data => setBreweries(data))
+    .then(data => {
+      setBreweries(data)
+      const newPoints = data.map(brewery => { return {
+        lat: parseFloat(brewery.latitude),
+        lng: parseFloat(brewery.longitude)
+      }})
+      setPoints(newPoints)
+    })
   }
   
   return (
@@ -97,6 +105,7 @@ function App() {
             handleSubmit={handleSubmit}
             handleFavorites={handleFavorites}
             handleVisited={handleVisited}
+            points={points}
           />
         </Route>
         <Route exact path='/visited'>
