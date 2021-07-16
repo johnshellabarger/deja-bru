@@ -7,48 +7,50 @@ import React, { Component } from 'react'
     height: '25vw'
   }
   
-  export class MapContainer extends Component {
-    render() {
-      const handleMarkers = this.props.handleMarkers
-      const breweryData = this.props.breweries
-      // const points = breweryData.map(brewery => { return {
-      //   lat: brewery.latitude,
-      //   lng: brewery.longitude}
-      // })
-      // let bounds = this.props.google.maps.LatLngBounds();
-      // for (let i=0; i < points.length; i++ ) {
-      //   bounds.extend(points[i]);
-      // }
+ const MapContainer = (props) => {
+    console.log(props.points)  
+    const bounds = new props.google.maps.LatLngBounds();    
+
+      function setMarkers() {
+        for (let i=0; i < props.points.length; i++) {
+          if (isNaN(props.points[i].lat)) {
+            i++
+          } else { 
+            bounds.extend(props.points[i]); 
+          }
+        }
+        console.log(bounds)
+        }
 
     return (
-    <div className='map-container'> 
-          <Map 
-            google={this.props.google} 
-            zoom={4} 
-            style={containerStyle}
-            initialCenter={{
-              lat: 38.854885,
-              lng: -98.081807
-            }}
-            >
- 
-            {breweryData.map(bar => {
-              return(
-                <Marker 
-                  key={bar.id}
-                  position={{
-                    lat: bar.latitude,
-                    lng: bar.longitude
-                  }}
-                  onClick={() => handleMarkers(bar)}
-                />
-              )
-            })}
-  
-          </Map>
-    </div>
+      <div className='map-container'> 
+            <Map 
+              google={props.google} 
+              zoom={4} 
+              style={containerStyle}
+              initialCenter={{
+                lat: 42.39,
+                lng: -72.52
+              }}
+              bounds={bounds}
+              >
+              {setMarkers()}
+              {props.breweries.map(bar => {
+                return(
+                  <Marker 
+                    key={bar.id}
+                    position={{
+                      lat: bar.latitude,
+                      lng: bar.longitude
+                    }}
+                    onClick={() => props.handleMarkers(bar.name)}
+                  />
+                  )
+                  })
+                }
+            </Map>
+      </div>
     );
-  }
 }
  
 export default GoogleApiWrapper({
