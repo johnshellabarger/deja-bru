@@ -27,8 +27,8 @@ import React, { Component } from 'react'
               zoom={4} 
               style={containerStyle}
               initialCenter={{
-                lat: 42.39,
-                lng: -72.52
+                lat: 38.854885,
+                lng: -98.081807
               }}
               bounds={bounds}
               >
