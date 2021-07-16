@@ -9,16 +9,18 @@ import React, { Component } from 'react'
   
  const MapContainer = (props) => {
     console.log(props.points)  
-    const bounds = new props.google.maps.LatLngBounds();
-    
-    setTimeout(() => {  
-      for (let i=0; i < props.points.length; i++) {
-        if (props.points[i] === null) { 
-          return false 
-        } else { bounds.extend(props.points[i])}; 
-      }}, 1000)
+    const bounds = new props.google.maps.LatLngBounds();    
 
-      console.log(bounds)
+      function setMarkers() {
+        for (let i=0; i < props.points.length; i++) {
+          if (isNaN(props.points[i].lat)) {
+            i++
+          } else { 
+            bounds.extend(props.points[i]); 
+          }
+        }
+        console.log(bounds)
+        }
 
     return (
       <div className='map-container'> 
@@ -32,8 +34,8 @@ import React, { Component } from 'react'
               }}
               bounds={bounds}
               >
+              {setMarkers()}
               {props.breweries.map(bar => {
-                if (bar.latitude)
                 return(
                   <Marker 
                     key={bar.id}
@@ -43,8 +45,9 @@ import React, { Component } from 'react'
                     }}
                     onClick={() => props.handleMarkers(bar.name)}
                   />
-                )
-              })}
+                  )
+                  })
+                }
             </Map>
       </div>
     );
