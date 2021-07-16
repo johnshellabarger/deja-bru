@@ -5,12 +5,13 @@ import GoogleMap from './GoogleMap'
 import Footer from './Footer'
 import { useState } from 'react'
 
-const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorites, handleVisited, visitedBreweries }) => {
+const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorites, handleVisited, visitedBreweries, setBreweries, formData }) => {
 
     const [clickedMarker, setClickedMarker] = useState('')
 
-    function handleMarkers(name){
-        setClickedMarker(name)
+
+    function handleMarkers(bar){
+        setClickedMarker(bar)
     }
 
     return (
@@ -32,6 +33,8 @@ const Home = ({ breweries, favorites, handleChange, handleSubmit, handleFavorite
                 breweries={breweries}
                 favorites={favorites}
                 visitedBreweries={visitedBreweries}
+                setBreweries={setBreweries}
+                formData={formData}
             />
             <Footer />
         </div>

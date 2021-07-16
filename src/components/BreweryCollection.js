@@ -1,13 +1,33 @@
 import React from 'react'
+import { FaIndent } from 'react-icons/fa'
 import BreweryCard from './BreweryCard'
 
-const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorites, visitedBreweries, clickedMarker }) => {        
+const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorites, visitedBreweries, clickedMarker, setBreweries, formData }) => {        
+
+    
+
+    function displayInfo(){
+        const foundBrewery = [...breweries].filter(bar => bar.name === clickedMarker.name)
+        setBreweries(foundBrewery)
+    }
+
+    function resetBreweries(){
+        fetch(`https://api.openbrewerydb.org/breweries?per_page=50&by_city=${formData.city}&by_state=${formData.state.toLowerCase()}`)
+        .then(resp => resp.json())
+        .then(data => setBreweries(data))
+    }
+    
+    
+    
     return (
+        <>
+        <h1 className='clickedMarker'>{clickedMarker === null ? null : <span>{clickedMarker.name}</span> }</h1>
+        {!clickedMarker ? null : <span><button onClick={displayInfo}>Find</button><button onClick={resetBreweries}>Reset</button></span>}
         <div className='ui six cards centered'>
             {breweries.map(brewery => { 
-             if(brewery.name === clickedMarker)
                 return (
                 <BreweryCard 
+                    clickedMarker={clickedMarker}
                     brewery={brewery}
                     key = {brewery.id}
                     id = {brewery.id}
@@ -22,10 +42,12 @@ const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorite
                     favorites={favorites}
                     visitedBreweries={visitedBreweries}
                     phoneNumber={brewery.phone}
+                    clickedMarker={clickedMarker}
 
                 />
             )})}
         </div>
+        </>
     )
 }
 
