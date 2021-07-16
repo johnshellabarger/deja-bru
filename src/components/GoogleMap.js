@@ -9,8 +9,17 @@ import React, { Component } from 'react'
   
   export class MapContainer extends Component {
     render() {
-      const breweryData = this.props.breweries
       const handleMarkers = this.props.handleMarkers
+      const breweryData = this.props.breweries
+      // const points = breweryData.map(brewery => { return {
+      //   lat: brewery.latitude,
+      //   lng: brewery.longitude}
+      // })
+      // let bounds = this.props.google.maps.LatLngBounds();
+      // for (let i=0; i < points.length; i++ ) {
+      //   bounds.extend(points[i]);
+      // }
+
     return (
     <div className='map-container'> 
           <Map 
