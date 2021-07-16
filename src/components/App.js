@@ -59,7 +59,6 @@ function App() {
     })
     } else {
       const arrayWithRemovedBrewery = visitedBreweries.filter(visited => visited.id !== id)
-      console.log(arrayWithRemovedBrewery)
       setVisitedBreweries(arrayWithRemovedBrewery)
       fetch(`http://localhost:3000/visited/${id}`, {
       method: 'DELETE'
@@ -106,6 +105,9 @@ function App() {
             handleFavorites={handleFavorites}
             handleVisited={handleVisited}
             points={points}
+            setBreweries={setBreweries}
+            formData={formData}
+
           />
         </Route>
         <Route exact path='/visited'>

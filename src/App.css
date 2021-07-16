@@ -49,7 +49,7 @@
 }
 
 .ui.centered.cards {
-	margin-top: 28%;
+	margin-top: 1%;
 	padding-left: 80px;
 	padding-right: 80px;
 	margin-bottom: 20%;
@@ -465,4 +465,9 @@ body {
 
 #visitedSearch {
 	margin-top: 28%;
+}
+
+
+.clickedMarker{
+	margin-top:28%;
 }
