@@ -74,7 +74,8 @@
 .ui.action.input:not([class*="left action"]) > .button:last-child,
 .ui.action.input:not([class*="left action"]) > .buttons:last-child > .button,
 .ui.action.input:not([class*="left action"]) > .dropdown:last-child {
-	background-color: #df8d03;
+	background-color:#f2711c;
+	color:white;
 }
 
 .ui.card > :last-child,
@@ -470,4 +471,14 @@ body {
 
 .clickedMarker{
 	margin-top:28%;
+}
+
+#brew-btns{
+	color:white;
+	background-color:#f2711c
+}
+
+
+.clickedBreweryName{
+	font-family: 'Josefin Sans', sans-serif;
 }

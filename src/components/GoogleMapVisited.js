@@ -34,6 +34,11 @@ import React, { Component } from 'react'
                             lat: bar.latitude,
                             lng: bar.longitude
                         }}
+                      icon={{
+                          url: "https://freepngimg.com/thumb/beer/1-beer-png-image.png",
+                          anchor: new this.props.google.maps.Point(32,32),
+                          scaledSize: new this.props.google.maps.Size(20,40)
+                        }}
                     />
                 )
             })}

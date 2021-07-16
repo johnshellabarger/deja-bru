@@ -21,8 +21,8 @@ const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorite
     
     return (
         <>
-        <h1 className='clickedMarker'>{clickedMarker === null ? null : <span>{clickedMarker.name}</span> }</h1>
-        {!clickedMarker ? null : <span><button className='ui button' onClick={displayInfo}>Find</button><button className='ui button' onClick={resetBreweries}>Reset</button></span>}
+        <h1 className='clickedMarker'>{clickedMarker === null ? null : <span className='clickedBreweryName'>{clickedMarker.name}</span>}</h1>
+        {!clickedMarker ? null : <span><button className='ui button' id='brew-btns' onClick={displayInfo}>Find</button><button className='ui button brew-btns' id='brew-btns' onClick={resetBreweries}>Reset</button></span>}
         <div className='ui six cards centered'>
             {breweries.map(brewery => { 
                 return (
