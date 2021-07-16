@@ -7,6 +7,11 @@ const Navbar = () => {
 
     const handleClick = (e, { name }) => {
         setActiveItem(name)
+        if(name === 'Home'){
+            window.location.pathname='/home'
+        }
+
+        
     }
 
     return (

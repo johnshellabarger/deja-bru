@@ -275,6 +275,48 @@
       "updated_at": "2018-08-23T00:00:00.000Z",
       "created_at": "2018-07-24T00:00:00.000Z",
       "rating": 5
+    },
+    {
+      "id": 11027,
+      "obdb_id": "good-river-beer-company-denver",
+      "name": "Good River Beer Company",
+      "brewery_type": "contract",
+      "street": "1790 S Bannock St.",
+      "address_2": null,
+      "address_3": null,
+      "city": "Denver",
+      "state": "Colorado",
+      "county_province": null,
+      "postal_code": "80223",
+      "country": "United States",
+      "longitude": "-104.9898169",
+      "latitude": "39.68421218",
+      "phone": "6023697442",
+      "website_url": "http://www.grbeerco.com",
+      "updated_at": "2018-08-24T00:00:00.000Z",
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
+    },
+    {
+      "id": 8039,
+      "obdb_id": "10-barrel-brewing-co-denver-denver",
+      "name": "10 Barrel Brewing Co - Denver",
+      "brewery_type": "large",
+      "street": "2620 Walnut St",
+      "address_2": null,
+      "address_3": null,
+      "city": "Denver",
+      "state": "Colorado",
+      "county_province": null,
+      "postal_code": "80205-2231",
+      "country": "United States",
+      "longitude": "-104.9853655",
+      "latitude": "39.7592508",
+      "phone": "7205738992",
+      "website_url": null,
+      "updated_at": "2018-08-24T00:00:00.000Z",
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     }
   ],
   "visited": [
@@ -821,7 +863,8 @@
       "phone": "6023697442",
       "website_url": "http://www.grbeerco.com",
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 4
     },
     {
       "id": 8039,
@@ -841,7 +884,8 @@
       "phone": "7205738992",
       "website_url": null,
       "updated_at": "2018-08-24T00:00:00.000Z",
-      "created_at": "2018-07-24T00:00:00.000Z"
+      "created_at": "2018-07-24T00:00:00.000Z",
+      "rating": 2
     }
   ]
 }
