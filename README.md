@@ -39,7 +39,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- Screenshot Here -->
+![deja-bru-landing-page-animation](https://user-images.githubusercontent.com/82396393/134078307-67edf8d9-4707-4441-9238-23a3a119c6d0.gif)
 
 Do you love Beer? Do you love it so much that you've gone to so many breweries and drank so much beer that you can't remember which one's you've been to and which ones are your favorite? Then you NEED Deja-Bru! 
 
@@ -86,20 +86,26 @@ To get a local copy up and running follow these steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-### Searching for Breweries
-<!-- Text here, .gif below -->
+### Landing Page
+Pour yourself a cold one and watch the page do the same! Bubble animations and a golden ale colored background prepare you to remember your favorite breweries!
 <p align='center'>
-  <img width='75%' src=""/>
+  <img width='75%' src="https://user-images.githubusercontent.com/82396393/134078777-9126963f-9814-40a1-88a7-48985900861b.gif"/>
+</p>
+
+### Searching for Breweries
+Click on the home button and you are presented with a map and a search bar. Enter a city or state to being your search for your favorite breweries! Click a beer on the map to see the name of the brewery, and click the find button to display the card for that brewery. Or you can scroll through the list to start your search!  
+<p align='center'>
+  <img width='75%' src="https://user-images.githubusercontent.com/82396393/134079494-4358e9f7-6c5c-4424-acf4-d36e9f11e537.gif"/>
 </p>
 
 ### Marking a Brewery as Visited
-<!-- Text here, .gif below -->
+Click on "Add to Visited" to mark that brewery as visited. Click on the Visited tab to see all of the breweries you have visited! 
 <p align='center'>
-  <img width='75%' src=""/>
+  <img width='75%' src="https://user-images.githubusercontent.com/82396393/134080137-7d65b985-15f4-4258-b6a1-ee88a3928d67.gif"/>
 </p>
 
-### Favoriting a Brewery & Rating Visited Breweries
-<!-- Text here, .gif below -->
+### Visited Tab
+On the Visited Tab you can see all of your visited breweries on a map! You can also choose to favorite a specific brewery, rate a brewery 1-5 starts, sort by rating, search by name, and visit the website for that brewery. This is the heart of Deja-Bru! When you can't remember where you've visited and what you rated it, come to this page! 
 <p align='center'>
   <img width='75%' src=""/>
 </p>
