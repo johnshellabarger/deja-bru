@@ -4,9 +4,9 @@ import logo from '../images/deja-bru-logo.png'
 const LandingPage = () => {
     return (
         <div>
-            <img className='animate__animated animate__backInDown' src={logo} alt='deja-bru logo'></img>
+            <img className='animate__animated animate__backInDown animate__delay-3s' src={logo} alt='deja-bru logo'></img>
             {/* <h1 id='intro-text' className='animate__animated animate__backInDown'>Welcome to Deja-Bru!</h1> */}
-            <div id="background-wrap" className='animate__animated animate__slideInUp'>
+            <div id="background-wrap" className='animate__animated animate__slideInUp animate__slower'>
                 <div class="bubble x1"></div>
                 <div class="bubble x2"></div>
                 <div class="bubble x3"></div>
