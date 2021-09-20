@@ -5,7 +5,7 @@
     An app that keeps track of the breweries you have been to, which ones are your favorite, and which ones you want to visit!
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://www.loom.com/share/f05809e08756448ebef2ac45844dee03">View Demo</a>
   </p>
 </p>
 
