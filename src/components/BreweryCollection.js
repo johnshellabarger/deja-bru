@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaIndent } from 'react-icons/fa'
 import BreweryCard from './BreweryCard'
 
 const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorites, visitedBreweries, clickedMarker, setBreweries, formData }) => {        
@@ -42,8 +41,6 @@ const BreweryCollection = ({ breweries, handleFavorites, handleVisited, favorite
                     favorites={favorites}
                     visitedBreweries={visitedBreweries}
                     phoneNumber={brewery.phone}
-                    clickedMarker={clickedMarker}
-
                 />
             )})}
         </div>

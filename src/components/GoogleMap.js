@@ -1,6 +1,4 @@
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
-import React, { Component } from 'react' 
-import { FaBeer } from "react-icons/fa"
 
   const containerStyle = {
     position: 'relative',  

@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaBeer } from "react-icons/fa"
 import { useState } from 'react';
 import VisitedBreweriesCard from './VisitedBreweriesCard'
 import GoogleMapVisited from './GoogleMapVisited'

@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaBeer } from "react-icons/fa"
-import { FaMap } from "react-icons/fa"
 import { useState } from 'react'
 
 
