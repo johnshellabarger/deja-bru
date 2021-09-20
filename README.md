@@ -135,7 +135,7 @@ Are you a beer aficionado who also codes? Do you want to contribute to this open
 <!-- CONTACT -->
 ## Contact
 
-Steve Vaughn - [Twitter](https://twitter.com/stevehvaughn) | [LinkedIn](https://www.linkedin.com/in/stevehvaughn/) | [Medium](https://stevehvaughn.medium.com/) | [Email](steve.h.vaughn@gmail.com)
+Steve Vaughn - [GitHub](https://github.com/stevehvaughn) | [LinkedIn](https://www.linkedin.com/in/stevehvaughn/) | [Medium](https://stevehvaughn.medium.com/) | [Twitter](https://twitter.com/stevehvaughn) | [Email](steve.h.vaughn@gmail.com)
 
 John Shellabarger - 
 
