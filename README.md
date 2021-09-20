@@ -107,13 +107,13 @@ Click on "Add to Visited" to mark that brewery as visited. Click on the Visited 
 ### Visited Tab
 On the Visited Tab you can see all of your visited breweries on a map! You can also choose to favorite a specific brewery, rate a brewery 1-5 starts, sort by rating, search by name, and visit the website for that brewery. This is the heart of Deja-Bru! When you can't remember where you've visited and what you rated it, come to this page! 
 <p align='center'>
-  <img width='75%' src=""/>
+  <img width='75%' src="https://user-images.githubusercontent.com/82396393/134084166-05684232-6e1f-4c80-80f6-13385c5bb3a2.gif"/>
 </p>
 
-### Commenting on Favorited Breweries
-<!-- Text here, .gif below -->
+### Favorites Tab
+On the Favorites Tab you can sort through your favorites by name, or state, as well as search by name. When you click view comments you can see any comments you made about that brewery and add a new comment. You can also remove the brewery from your favorites if they sell out to AB and they start making bad beer! 
 <p align='center'>
-  <img width='75%' src=""/>
+  <img width='75%' src="https://user-images.githubusercontent.com/82396393/134085171-2c84436a-12e7-4135-a2fa-1678952608df.gif"/>
 </p>
 
 <!-- ROADMAP -->
