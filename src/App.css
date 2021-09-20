@@ -74,8 +74,8 @@
 .ui.action.input:not([class*="left action"]) > .button:last-child,
 .ui.action.input:not([class*="left action"]) > .buttons:last-child > .button,
 .ui.action.input:not([class*="left action"]) > .dropdown:last-child {
-	background-color:#f2711c;
-	color:white;
+	background-color: #f2711c;
+	color: white;
 }
 
 .ui.card > :last-child,
@@ -406,7 +406,7 @@ body {
 	padding: 1rem;
 	background-color: black;
 	color: white;
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -468,17 +468,15 @@ body {
 	margin-top: 28%;
 }
 
-
-.clickedMarker{
-	margin-top:28%;
+.clickedMarker {
+	margin-top: 28%;
 }
 
-#brew-btns{
-	color:white;
-	background-color:#f2711c
+#brew-btns {
+	color: white;
+	background-color: #f2711c;
 }
 
-
-.clickedBreweryName{
+.clickedBreweryName {
 	font-family: 'Josefin Sans', sans-serif;
 }
