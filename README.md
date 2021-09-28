@@ -137,7 +137,7 @@ Are you a beer aficionado who also codes? Do you want to contribute to this open
 
 Steve Vaughn - [GitHub](https://github.com/stevehvaughn) | [LinkedIn](https://www.linkedin.com/in/stevehvaughn/) | [Medium](https://stevehvaughn.medium.com/) | [Twitter](https://twitter.com/stevehvaughn) | [Email](steve.h.vaughn@gmail.com)
 
-John Shellabarger - 
+John Shellabarger - [GitHub](https://github.com/johnshellabarger) | [LinkedIn](https://www.linkedin.com/in/johnshellabarger/) | [Email](johnwilliamshellabarger@gmail.com)
 
 Project Link: [https://github.com/johnshellabarger/deja-bru](https://github.com/johnshellabarger/deja-bru)
 
